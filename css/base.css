@@ -1,1 +1,2289 @@
+/*                                                                               */
+/*                                                                               */
+/*     SSSSSSSSSSSSSSS IIIIIIIIIIXXXXXXX       XXXXXXXTTTTTTTTTTTTTTTTTTTTTTT    */
+/*    SS:::::::::::::::SI::::::::IX:::::X       X:::::XT:::::::::::::::::::::T   */
+/*    S:::::SSSSSS::::::SI::::::::IX:::::X       X:::::XT:::::::::::::::::::::T  */
+/*   S:::::S     SSSSSSSII::::::IIX::::::X     X::::::XT:::::TT:::::::TT:::::T   */
+/*   S:::::S              I::::I  XXX:::::X   X:::::XXXTTTTTT  T:::::T  TTTTTT   */
+/*   S:::::S              I::::I     X:::::X X:::::X           T:::::T           */
+/*    S::::SSSS           I::::I      X:::::X:::::X            T:::::T           */
+/*     SS::::::SSSSS      I::::I       X:::::::::X             T:::::T           */
+/*       SSS::::::::SS    I::::I       X:::::::::X             T:::::T           */
+/*          SSSSSS::::S   I::::I      X:::::X:::::X            T:::::T           */
+/*               S:::::S  I::::I     X:::::X X:::::X           T:::::T           */
+/*               S:::::S  I::::I  XXX:::::X   X:::::XXX        T:::::T           */
+/*   SSSSSSS     S:::::SII::::::IIX::::::X     X::::::X      TT:::::::TT         */
+/*   S::::::SSSSSS:::::SI::::::::IX:::::X       X:::::X      T:::::::::T         */
+/*   S:::::::::::::::SS I::::::::IX:::::X       X:::::X      T:::::::::T         */
+/*    SSSSSSSSSSSSSSS   IIIIIIIIIIXXXXXXX       XXXXXXX      TTTTTTTTTTT         */
+/*                                                                               */
+/*                                                                               */
+/*    Thx for starring @ this file. It was proudly coded by the frontend team    */
+/*                                                                               */
+/* Typo3-corporate START*/
+/* ----------------------------------------------- typo3 corporate styles
+----------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700|Roboto+Condensed:300,400,700&subset=latin,latin-ext);
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+/* without padding */
+/* line 3, ../../../../private/projects/typo3-corporate/scss_corp/_extensions.scss */
+.t3-table { display: table; width: 100%; }
 
+/* line 8, ../../../../private/projects/typo3-corporate/scss_corp/_extensions.scss */
+.t3-table-row { display: table-row; width: 100%; }
+
+/* line 13, ../../../../private/projects/typo3-corporate/scss_corp/_extensions.scss */
+.t3-table-cell { display: table-cell; vertical-align: middle; }
+
+/* line 18, ../../../../private/projects/typo3-corporate/scss_corp/_extensions.scss */
+.t3-grid, .t3-grid-wrapper .t3-grid-100, .t3-grid-wrapper .t3-grid-50, .t3-grid-wrapper .t3-grid-16, .t3-grid-wrapper .t3-grid-33, .t3-grid-wrapper .t3-grid-66, .t3-grid-wrapper .t3-grid-25, .t3-grid-wrapper .t3-grid-75 { padding: 0 1% 0 1%; float: left; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* line 24, ../../../../private/projects/typo3-corporate/scss_corp/_extensions.scss */
+.butt-close { float: right; border: 1px solid #333333; width: 18px; height: 18px; text-align: center; margin: 0 6px 0 6px; line-height: 120%; cursor: pointer; overflow: hidden; font-weight: normal; font-size: 14px; }
+
+/* line 38, ../../../../private/projects/typo3-corporate/scss_corp/_extensions.scss */
+.button-close, .sx-tooltip-content h5 span { float: right; width: 15px; height: 15px; margin: 3px 6px 0 6px; cursor: pointer; text-align: center; display: block; position: relative; /* hide 'x' content from old 'butt-style' */ }
+/* line 48, ../../../../private/projects/typo3-corporate/scss_corp/_extensions.scss */
+.button-close::after, .sx-tooltip-content h5 span::after { content: ''; display: block; width: 15px; height: 15px; position: absolute; top: 0; left: 0; background: #ffffff url(/common/img/app/typo3/typo3-corporate/default/icon/tooltip-close.png) no-repeat 0 0; }
+
+/*@import "scss_corp/base";*/
+/* ----------------------------------------- basics corporate
+----------------------------------------- */
+/* line 5, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+html { height: 101%; }
+
+/* line 9, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+body { font: normal normal normal 14px Roboto, Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; color: #333333; background-color: #ffffff; height: 101%; text-align: center; }
+
+/* line 17, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+body:after { content: 'max'; display: none; }
+@media (max-width: 999px) { /* line 17, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  body:after { content: 'full'; } }
+@media (max-width: 799px) { /* line 17, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  body:after { content: 'medium'; } }
+@media (max-width: 499px) { /* line 17, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  body:after { content: 'small'; } }
+
+/* line 34, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+* { margin: 0; padding: 0; }
+
+/* line 39, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+ul, li { list-style: none; }
+
+/* line 43, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+div.t3-def-list > ul, ul.sx-gc-def { padding: 0 0 10px 20px; list-style: disc; }
+/* line 47, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+div.t3-def-list > ul li, ul.sx-gc-def li { list-style: disc; margin: 6px 0 6px 0; }
+
+/* line 53, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+h1 { font-family: "Roboto Condensed", Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; color: #194FFF; font-size: 40px; font-weight: lighter; padding: 10px 0 20px 0; margin: 0; }
+@media (max-width: 799px) { /* line 53, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  h1 { font-size: 36px; } }
+@media (max-width: 499px) { /* line 53, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  h1 { font-size: 30px; } }
+
+/* line 70, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+h2 { font-family: "Roboto Condensed", Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; font-size: 32px; color: #333333; font-weight: lighter; padding: 10px 0 10px 0; margin: 0; }
+@media (max-width: 799px) { /* line 70, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  h2 { font-size: 26px; } }
+@media (max-width: 499px) { /* line 70, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  h2 { font-size: 22px; } }
+
+/* line 87, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+h3 { font-family: "Roboto Condensed", Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; font-size: 20px; color: #194FFF; font-weight: lighter; padding: 3px 0 10px 0; margin: 0; }
+@media (max-width: 799px) { /* line 87, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  h3 { font-size: 18px; } }
+
+/* line 100, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+h4 { font-family: "Roboto Condensed", Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; font-size: 16px; color: #333333; padding: 3px 0 10px 0; margin: 0; }
+
+/* line 108, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+h5 { font-family: "Roboto Condensed", Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; font-size: 14px; color: #194FFF; padding: 3px 0 10px 0; margin: 0; }
+
+/* line 116, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+h6 { font-family: "Roboto Condensed", Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; font-size: 12px; color: #666666; padding: 3px 0 10px 0; margin: 0; }
+
+/* line 124, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+a { color: #3979c3; text-decoration: underline; }
+
+/* line 129, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+blockquote { padding: 10px 0 10px 25px; margin: 10px 0 10px 0; background: transparent url("/common/img/app/typo3/typo3-corporate/default/bg/blockquote.png") no-repeat 0 10px; font-style: italic; }
+
+/* line 136, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+blockquote > div { border-left: 2px solid #194FFF; padding: 0 0 0 10px; }
+
+/* line 141, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+img { border: none; }
+
+/* line 145, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+p.sx-gc-def { padding: 0 0 10px 0; }
+
+/* ----------------------------------------- messages FORCE STYLES UNTIL CHANGES DONE!
+----------------------------------------- */
+/* line 153, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.sx-gc-error { background: #f2dede; border: 1px solid #e1c4c4; clear: both; color: #666666; margin: 10px 0 20px 0; padding: 10px 10px 4px 10px; -webkit-border-radius: 4px 4px 4px 4px; -moz-border-radius: 4px 4px 4px 4px; border-radius: 4px 4px 4px 4px; }
+
+/* line 163, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.sx-gc-error-invert { border-color: #ffffff; }
+
+/* line 167, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.sx-gc-error p { color: #666666; font-weight: normal; margin: 0; padding: 0 0 6px; }
+
+/* line 174, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.sx-gc-message { background: #fff3e0; border: 1px solid #e7d7bf; clear: both; color: #666666; margin: 10px 0 20px 0; padding: 10px 10px 4px 10px; -webkit-border-radius: 4px 4px 4px 4px; -moz-border-radius: 4px 4px 4px 4px; border-radius: 4px 4px 4px 4px; }
+
+/* line 184, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.sx-gc-message-invert { border-color: #ffffff; }
+
+/* line 188, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.sx-gc-message p { color: #666666; font-weight: normal; margin: 0; padding: 0 0 6px; }
+
+/* line 195, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.sx-gc-message-inl { background: #ffffff; border: 1px solid #194FFF; clear: both; color: #666666; margin: 10px 0 20px 0; padding: 10px 10px 4px 10px; -webkit-border-radius: 4px 4px 4px 4px; -moz-border-radius: 4px 4px 4px 4px; border-radius: 4px 4px 4px 4px; }
+
+/* line 205, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.sx-gc-message-inl p { color: #666666; margin: 0; padding: 0 0 6px; }
+
+/* line 211, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-teaser-section { position: relative; min-height: 500px; }
+@media (max-width: 999px) { /* line 211, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-teaser-section { min-height: auto; } }
+/* line 217, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-teaser-section .t3-teaser-container { position: absolute; width: 100%; height: 100%; background: #292936; background: #22222e radial-gradient(ellipse at center center, #5b5b6b 0%, #22222e 100%) no-repeat scroll 50% 0; overflow: hidden; white-space: nowrap; text-align: left; /* ATTN!!! paddings must correspond with t3-app-wrapper */ }
+/* line 226, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-teaser-section .t3-teaser-container .t3-teaser-nav { display: block; width: 40px; height: 40px; opacity: .55; position: absolute; top: 45%; cursor: pointer; background: black url(/common/img/app/reservation/default/ibe-horizontal/icons/arrow_slider.svg) no-repeat; color: #ffffff; font-size: 40px; font-weight: 200; line-height: 35px; text-align: center; user-select: none; -moz-user-select: none; -webkit-user-select: none; }
+/* line 244, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-teaser-section .t3-teaser-container .t3-teaser-nav-left { left: 3%; transform: scaleX(-1); background-position: 55% 50%; }
+/* line 249, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-teaser-section .t3-teaser-container .t3-teaser-nav-right { right: 3%; background-position: 52% 50%; }
+/* line 253, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-teaser-section .t3-teaser-container .t3-teaser-item { display: inline-block; width: 100%; height: 100%; background-repeat: no-repeat; background-position: 50% 0; background-size: auto 500px; transition: all .2s ease-in-out; }
+/* line 262, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-teaser-section .t3-teaser-container .t3-teaser-item.t3-teaser-default { background-image: url("/fileadmin/files/global/modules/home-billboard/global/1600x500/fallback.jpg"); }
+/* line 265, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-teaser-section .t3-teaser-container .t3-teaser-item.t3-teaser-default.t3-teaser-truck { background-image: url("/fileadmin/files/global/modules/home-billboard/global/1600x500/fallback_lkw.jpg"); }
+@media (max-width: 999px) { /* line 253, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-teaser-section .t3-teaser-container .t3-teaser-item { background-size: 160% auto; } }
+@media (max-width: 499px) { /* line 253, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-teaser-section .t3-teaser-container .t3-teaser-item { display: none; } }
+/* line 277, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-teaser-section .t3-teaser-container .t3-teaser-item.t3-teaser-item-left { position: absolute; margin: 0 0 0 -3%; opacity: 0; }
+/* line 283, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-teaser-section .t3-teaser-container .t3-teaser-lite { width: 100%; height: 100%; background-repeat: no-repeat; background-position: 50% 0; background-size: 100% auto; display: none; }
+/* line 290, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-teaser-section .t3-teaser-container .t3-teaser-lite.t3-teaser-default { background-image: url("/fileadmin/files/global/modules/home-billboard/global/500x280/fallback.jpg"); }
+/* line 293, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-teaser-section .t3-teaser-container .t3-teaser-lite.t3-teaser-default.t3-teaser-truck { background-image: url("/fileadmin/files/global/modules/home-billboard/global/500x280/fallback_lkw.jpg"); }
+@media (max-width: 499px) { /* line 283, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-teaser-section .t3-teaser-container .t3-teaser-lite { display: block; } }
+@media (max-width: 999px) { /* line 217, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-teaser-section .t3-teaser-container { background: #ffffff; } }
+/* line 308, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-teaser-section .t3-teaser-container a.sx-teaser-link { max-width: 960px; padding: 290px 0 0 0; display: block; margin: auto; position: relative; z-index: 10000; }
+@media (max-width: 999px) { /* line 308, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-teaser-section .t3-teaser-container a.sx-teaser-link { padding: 32% 0 0 0; } }
+@media (max-width: 499px) { /* line 308, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-teaser-section .t3-teaser-container a.sx-teaser-link { padding: 55% 0 0 0; } }
+
+/* line 325, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-app-wrapper { padding: 32% 0 0 0; position: relative; }
+@media (max-width: 499px) { /* line 325, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-app-wrapper { padding: 55% 0 0 0; } }
+/* line 332, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-app-wrapper .t3-teaser-icons { text-align: center; padding: 0 0 6px 0; display: none; }
+/* line 336, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-app-wrapper .t3-teaser-icons div { display: inline-block; width: 8px; height: 8px; border: 2px solid #ffffff; -webkit-border-radius: 6px 6px 6px 6px; -moz-border-radius: 6px 6px 6px 6px; border-radius: 6px 6px 6px 6px; background: rgba(255, 255, 255, 0.3); margin: 0 10px 0 10px; cursor: pointer; line-height: 60%; }
+@media (max-width: 999px) { /* line 336, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-app-wrapper .t3-teaser-icons div { background: #333333; border-color: #333333; } }
+/* line 352, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-app-wrapper .t3-teaser-icons div:hover, .t3-app-wrapper .t3-teaser-icons div.sx-selected { background: white; }
+@media (max-width: 999px) { /* line 352, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-app-wrapper .t3-teaser-icons div:hover, .t3-app-wrapper .t3-teaser-icons div.sx-selected { background: #999999; } }
+@media (max-width: 499px) { /* line 332, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-app-wrapper .t3-teaser-icons { display: none !important; } }
+
+/* ----------------------------------------- topbar logo and navi
+----------------------------------------- */
+/* line 368, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-main-top { background: #111119; }
+
+/* line 372, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-top-bar { position: relative; height: 80px; z-index: 20000; /* clickable area above the logo */ }
+/* line 377, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-top-bar #sx-go-home { position: absolute; left: 0; height: 51px; width: 101px; background: transparent url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_logo_vertical_white.svg") no-repeat 0 0; background-size: auto 100%; top: 13px; z-index: 10001; /* hide SEO-TEXT */ text-indent: 100%; white-space: nowrap; overflow: hidden; }
+
+/* line 394, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-top-bar .sx-logo-fr #sx-go-home { background-image: url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_fr_logo_vertical_white.svg"); }
+
+/* only home has t3-logo-big class */
+/* line 401, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-logo-big .t3-top-bar #sx-go-home { height: 54px; width: 303px; background: transparent url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_logo_horizontal_white.svg") no-repeat 0 0; background-size: auto 100%; top: 10px; }
+@media (max-width: 799px) { /* line 401, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-logo-big .t3-top-bar #sx-go-home { top: 13px; height: 51px; width: 101px; background-image: url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_logo_vertical_white.svg"); } }
+
+/* line 417, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-logo-big .t3-top-bar .sx-logo-fr #sx-go-home { background-image: url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_fr_logo_horizontal_white.svg"); }
+@media (max-width: 799px) { /* line 417, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-logo-big .t3-top-bar .sx-logo-fr #sx-go-home { background-image: url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_fr_logo_vertical_white.svg"); } }
+
+/* line 426, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-logo-truck .t3-top-bar #sx-go-home { background-image: url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_logo_truck_vertical_white.svg"); width: 117px; }
+
+/* line 433, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-logo-truck .t3-top-bar .sx-logo-fr #sx-go-home { background-image: url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_fr_logo_truck_vertical_white.svg"); }
+
+/* line 439, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-logo-big.t3-logo-truck .t3-top-bar #sx-go-home { background-image: url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_logo_truck_horizontal_white.svg"); width: 335px; }
+@media (max-width: 799px) { /* line 439, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-logo-big.t3-logo-truck .t3-top-bar #sx-go-home { background-image: url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_logo_truck_vertical_white.svg"); width: 117px; } }
+
+/* line 450, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-logo-big.t3-logo-truck .t3-top-bar .sx-logo-fr #sx-go-home { background-image: url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_fr_logo_truck_horizontal_white.svg"); }
+@media (max-width: 799px) { /* line 450, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-logo-big.t3-logo-truck .t3-top-bar .sx-logo-fr #sx-go-home { background-image: url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_fr_logo_truck_vertical_white.svg"); } }
+
+/* ----------------------------------------- content divisions and inner container
+----------------------------------------- */
+/* line 461, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-page-wrapper { margin: auto; max-width: 1600px; }
+/* line 465, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-page-wrapper.t3-static-bg { background: #ebebeb; }
+
+/* line 470, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-static-bg { background: #ebebeb; }
+
+/* line 474, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-content-division { clear: both; text-align: center; }
+
+/* line 479, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-content-division-inner { clear: both; text-align: left; margin: auto; text-align: left; padding: 0 10px 0 10px; max-width: 960px; }
+/* line 23, ../../../../private/projects/typo3-corporate/scss_corp/_mixins.scss */
+.t3-content-division-inner:after { content: "."; clear: both; display: block; height: 0; visibility: hidden; overflow: hidden; }
+@media (max-width: 499px) { /* line 479, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-content-division-inner { padding: 0 3px 0 3px; min-width: 300px; } }
+
+@media (max-width: 999px) { /* line 494, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-main-content { padding: 0; max-width: none; } }
+
+/* line 501, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-static-content, .t3-booking-content { background: #ffffff; padding: 0 30px 3% 30px; margin-bottom: 5px; }
+@media (max-width: 799px) { /* line 501, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-static-content, .t3-booking-content { padding: 0 20px 0 20px; } }
+@media (max-width: 499px) { /* line 501, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-static-content, .t3-booking-content { padding: 0 10px 0 10px; } }
+
+/* line 514, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-special-content { padding: 0; max-width: 1020px; }
+
+/* content black on white with spave */
+/* line 520, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-content-division-space { padding: 2% 0 2% 0; }
+@media (max-width: 799px) { /* line 520, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-content-division-space { padding: 1% 0 1% 0; } }
+
+/* content white on black */
+/* line 528, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-content-division-invert { background: #111119; padding: 2% 0 2% 0; font-size: 12px; }
+@media (max-width: 799px) { /* line 528, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-content-division-invert { padding: 1% 0 1% 0; } }
+/* line 536, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-content-division-invert * { color: #ffffff; }
+
+/* content white on orange */
+/* line 542, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-content-division-highlight { background: #194FFF; padding: 2% 0 2% 0; font-size: 12px; }
+@media (max-width: 799px) { /* line 542, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-content-division-highlight { padding: 1% 0 1% 0; } }
+/* line 550, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-content-division-highlight * { color: #ffffff; }
+
+/* content dark on grey */
+/* line 556, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-content-division-invert-dark { background: #ebebeb; padding: 3% 0 3% 0; font-size: 12px; }
+@media (max-width: 799px) { /* line 556, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-content-division-invert-dark { padding: 1% 0 1% 0; } }
+
+/* line 565, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-content-wrapper { padding: 2% 0 2% 0; }
+/* line 23, ../../../../private/projects/typo3-corporate/scss_corp/_mixins.scss */
+.t3-content-wrapper:after { content: "."; clear: both; display: block; height: 0; visibility: hidden; overflow: hidden; }
+
+/* line 570, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-content-wrapper-centered { text-align: center; }
+
+/* ----------------------------------------- common classes
+----------------------------------------- */
+/* line 577, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-fullsize { width: 100%; height: auto; border: none; }
+
+/* line 583, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-shadow-box { -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7); -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7); box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7); }
+
+/* line 587, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-shadow { -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7); -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7); box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7); }
+
+/* line 591, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-content-box { padding: 2%; margin: 5% 0 5% 0; }
+
+/* line 596, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-content-text { font-size: 14px; color: #555555; }
+/* line 599, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-content-text a { color: #3979c3; text-decoration: underline; }
+/* line 603, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-content-text p { margin: 10px 0 10px 0; }
+
+/* line 608, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-content-inline-list { clear: both; }
+/* line 23, ../../../../private/projects/typo3-corporate/scss_corp/_mixins.scss */
+.t3-content-inline-list:after { content: "."; clear: both; display: block; height: 0; visibility: hidden; overflow: hidden; }
+/* line 613, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-content-inline-list ul { display: inline-block; margin: 0 0 20px 0; }
+/* line 618, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-content-inline-list li { display: inline-block; padding: 5px; white-space: nowrap; }
+
+/* line 625, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-rightfloater { float: right; }
+
+/* line 629, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-leftfloater { float: left; }
+
+/* ----------------------------------------- column basics
+----------------------------------------- */
+/* line 636, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-grid-wrapper { clear: both; margin: 0 -1% 0 -1%; position: relative; /* first level t3-grid-50 must be fullsize if bp-medium  */ }
+@media (max-width: 499px) { /* line 636, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-grid-wrapper { margin: 0; } }
+/* line 644, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-grid-wrapper .t3-grid-wrapper { clear: none; }
+/* line 648, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-grid-wrapper .t3-grid-100 { width: 100%; }
+@media (max-width: 799px) { /* line 648, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-grid-wrapper .t3-grid-100 { float: none; padding: 0; width: auto; } }
+/* line 658, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-grid-wrapper .t3-grid-50 { width: 50%; }
+@media (max-width: 799px) { /* line 658, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-grid-wrapper .t3-grid-50 { float: none; width: auto; } }
+@media (max-width: 499px) { /* line 658, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-grid-wrapper .t3-grid-50 { float: none; padding: 0; width: auto; } }
+@media (max-width: 799px) { /* line 673, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-grid-wrapper .t3-grid-wrapper .t3-grid-50 { float: left; width: 50%; padding: 0 1% 0 1%; } }
+@media (max-width: 499px) { /* line 673, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-grid-wrapper .t3-grid-wrapper .t3-grid-50 { float: none; padding: 0; width: auto; } }
+/* line 686, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-grid-wrapper .t3-grid-16 { width: 16.66%; }
+@media (max-width: 799px) { /* line 686, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-grid-wrapper .t3-grid-16 { width: 33.33%; } }
+@media (max-width: 499px) { /* line 686, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-grid-wrapper .t3-grid-16 { float: none; padding: 0; width: auto; } }
+/* line 699, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-grid-wrapper .t3-grid-33 { width: 33.33%; }
+@media (max-width: 499px) { /* line 699, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-grid-wrapper .t3-grid-33 { float: none; padding: 0; width: auto; } }
+/* line 709, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-grid-wrapper .t3-grid-66 { width: 66.66%; }
+@media (max-width: 499px) { /* line 709, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-grid-wrapper .t3-grid-66 { float: none; padding: 0; width: auto; } }
+/* line 719, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-grid-wrapper .t3-grid-25 { width: 25%; }
+@media (max-width: 499px) { /* line 719, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-grid-wrapper .t3-grid-25 { float: none; padding: 0; width: auto; } }
+/* line 729, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-grid-wrapper .t3-grid-75 { width: 75%; }
+@media (max-width: 499px) { /* line 729, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-grid-wrapper .t3-grid-75 { float: none; padding: 0; width: auto; } }
+/* line 23, ../../../../private/projects/typo3-corporate/scss_corp/_mixins.scss */
+.t3-grid-wrapper:after { content: "."; clear: both; display: block; height: 0; visibility: hidden; overflow: hidden; }
+
+@media (max-width: 499px) { /* line 742, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-content-division-inner > .t3-grid-wrapper { float: none; padding: 0; width: auto; } }
+
+@media (max-width: 799px) { /* line 750, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-static-content > .t3-grid-wrapper > .t3-grid-33, .t3-static-content > .t3-grid-wrapper > .t3-grid-66 { float: none; width: auto; } }
+@media (max-width: 499px) { /* line 750, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-static-content > .t3-grid-wrapper > .t3-grid-33, .t3-static-content > .t3-grid-wrapper > .t3-grid-66 { padding: 0; } }
+
+/* ----------------------------------------- slider basics
+----------------------------------------- */
+/* line 764, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+div.t3-slider-list-wrapper { margin: auto; padding: 0 0 2% 0; width: 90%; position: relative; }
+/* line 770, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+div.t3-slider-list-wrapper .sx-gc-next, div.t3-slider-list-wrapper .sx-gc-back { position: absolute; cursor: pointer; width: 24px; height: 100%; min-height: 24px; top: 0; background: transparent url("/common/img/app/typo3/typo3-corporate/default/bg/bg-slider-button.png") no-repeat 0 50%; }
+/* line 781, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+div.t3-slider-list-wrapper .sx-gc-next { right: -3%; }
+/* line 785, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+div.t3-slider-list-wrapper .sx-gc-back { left: -3%; background-position: 100% 50%; }
+/* line 790, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+div.t3-slider-list-wrapper .t3-slider-box { overflow: hidden; white-space: nowrap; }
+
+/* line 796, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+ul.t3-slider-list { width: auto; overflow: hidden; -ms-touch-action: pan-y; touch-action: pan-y; -ms-user-select: none; user-select: none; -webkit-user-select: none; }
+/* line 800, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+ul.t3-slider-list li.t3-js-slider-item { float: left; width: 33.3%; overflow: hidden; text-align: center; }
+/* line 807, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+ul.t3-slider-list li.t3-js-slider-item div:first-child { margin: 10px; min-height: 100px; }
+/* line 818, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+ul.t3-slider-list * { -ms-touch-action: pan-y; touch-action: pan-y; -ms-user-select: none; user-select: none; -webkit-user-select: none; }
+
+/* ----------------------------------------- anchor list
+----------------------------------------- */
+/* line 831, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-anchorlinks-wrapper .t3-js-anchorlinks-content { display: none; }
+
+/* ----------------------------------------- toggle
+----------------------------------------- */
+/* line 839, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-toggle-content { display: none; }
+
+/* line 843, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-selected .t3-toggle-content { display: block; }
+
+/* ----------------------------------------- footer
+----------------------------------------- */
+/* line 850, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-footer { overflow: hidden; padding: 2% 10px 2% 10px; font-size: 12px; }
+/* line 856, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-footer .t3-content-division-inner { margin: 0 auto 0 auto; overflow: hidden; }
+/* line 861, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-footer .t3-content-inline-list ul { margin: 0; }
+/* line 865, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-footer .t3-content-inline-list li { padding: 5px 10px 5px 10px; }
+/* line 869, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-footer .t3-content-inline-list a { text-decoration: none; color: #666666; }
+/* line 874, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-footer .t3-legal-content { padding: 20px 0 0 0; }
+
+@media (max-width: 499px) { /* line 879, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-seo, .t3-hide-for-small { display: none; } }
+
+/* ----------------------------------------- flexboxes NOT IN USE, SEE t3-gridboxes
+----------------------------------------- */
+/* line 892, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-boxes { display: -ms-flexbox; display: -moz-flex; display: -webkit-flex; display: flex; margin: 20px 0 20px 0; }
+/* line 896, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-boxes .t3-boxes-item { -webkit-flex: 1; -moz-flex: 1; -ms-flex: 1; flex: 1; text-align: center; }
+/* line 901, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-boxes .t3-boxes-center { margin: 0 2% 0 2%; }
+/* line 905, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-boxes .t3-boxes-button { display: table; width: 100%; height: 70px; background: #194FFF; }
+/* line 912, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-boxes .t3-boxes-button p { display: table-row; }
+/* line 916, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-boxes .t3-boxes-button p a { display: table-cell; padding: 0 4% 0 4%; vertical-align: middle; text-align: center; text-decoration: none; font-family: "Roboto Condensed", Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; color: #ffffff; font-size: 18px; font-weight: lighter; }
+/* line 928, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-boxes img { width: 100%; max-width: 400px; height: auto; margin: 0 auto 1% auto; }
+/* line 935, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-boxes .t3-boxes-img { border: 1px solid #194FFF; margin: 0 0 1% 0; }
+/* line 940, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-boxes .t3-boxes-img img { margin: auto; }
+@media (max-width: 499px) { /* line 892, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-boxes { display: block; max-width: 400px; margin: auto; }
+  /* line 950, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-boxes .t3-boxes-img { text-align: center; margin: 0; }
+  /* line 955, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-boxes .t3-boxes-item { display: block; margin: 0 0 2% 0; }
+  /* line 960, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-boxes img { display: block; margin: auto; } }
+
+/* line 969, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-boxes-extended .t3-boxes-center { margin: 0 4% 0 4%; }
+/* line 973, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-boxes-extended .t3-boxes-info { min-height: 70px; padding: 20px; text-align: center; font-size: 18px; color: #666666; }
+
+/* ----------------------------------------- t3-gridboxes
+----------------------------------------- */
+/* line 986, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-gridbox { text-align: center; margin: 0 0 10% 0; }
+/* line 991, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-gridbox a { display: block; /*border: 1px solid #194FFF;*/ }
+/* line 996, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-gridbox img { max-width: 100%; max-height: auto; width: auto; height: auto; margin: 0 auto; display: block; }
+/* line 1005, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-gridbox .t3-boxes-button { background: #194FFF; width: 100%; display: block; }
+/* line 1011, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-gridbox .t3-boxes-button p { width: 92%; height: 70px; padding: 0 4% 0 4%; text-align: center; white-space: nowrap; display: block; }
+/* line 1019, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-gridbox .t3-boxes-button p:before { height: 70px; width: 0; content: " "; pointer-events: none; display: inline-block; vertical-align: middle; overflow: hidden; }
+/* line 1031, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-gridbox .t3-boxes-button p a { vertical-align: middle; text-align: center; text-decoration: none; font-family: "Roboto Condensed", Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; color: #ffffff; font-size: 18px; font-weight: lighter; border: none; display: inline-block; white-space: normal; line-height: 110%; }
+/* line 1045, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-gridbox .t3-boxes-info { min-height: 70px; padding: 20px; font-size: 18px; color: #666666; }
+/* line 1052, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-gridbox .t3-boxes-img { margin: 0; }
+@media (max-width: 799px) { /* line 1057, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-gridbox .t3-boxes-img { margin: 0; }
+  /* line 1060, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-gridbox img { display: block; margin: auto; } }
+@media (max-width: 499px) { /* line 1067, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-gridbox img { display: block; width: 100%; margin: auto; } }
+
+/* fullsize boxes with 50% width picture */
+/* line 1078, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-fullsize-box { border: 1px solid #194FFF; position: relative; }
+/* line 1083, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-fullsize-box .t3-fullsize-box-bg-img { display: block; position: absolute; width: 50%; height: 100%; background: transparent url(/common/img/app/typo3/typo3-corporate/default/bg/hotline.png) no-repeat 0 55%; background-size: 100% auto; }
+/* line 1092, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-fullsize-box .t3-fullsize-content { padding: 0 0 0 50%; background: #ffffff; }
+/* line 1097, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-fullsize-box .t3-table-cell { vertical-align: middle; text-align: center; color: #194FFF; font-family: "Roboto Condensed", Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; font-size: 18px; padding: 6% 0 6% 0; height: 60%; height: 100px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+/* line 1109, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-fullsize-box .t3-table-cell small { display: block; margin: 10px 0 0 0; font-size: 14px; color: #666666; }
+/* line 1116, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-fullsize-box .t3-table-cell.t3-fullsize-button { background: #194FFF; color: #ffffff; font-size: 20px; padding: 4% 0 4% 0; height: 70px; }
+/* line 1124, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-fullsize-box .t3-table-cell.t3-fullsize-button small { margin: 0; color: #ffffff; font-size: 10px; }
+/* line 1130, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.t3-fullsize-box a { text-decoration: none; }
+@media (max-width: 499px) { /* line 1078, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-fullsize-box { background-size: 100% auto; background-position: 0 -40px; }
+  /* line 1140, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-fullsize-box .t3-fullsize-box-bg-img { height: 0; width: 100%; padding: 50% 0 0 0; }
+  /* line 1146, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .t3-fullsize-box .t3-fullsize-content { padding: 50% 0 0 0; } }
+
+/* ----------------------------------------- t3 overrides
+----------------------------------------- */
+/* line 1155, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+div.csc-textpic-imagecolumn, td.csc-textpic-imagecolumn .csc-textpic-image { margin-right: 10px; }
+
+/* line 1160, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+div.csc-textpic .csc-textpic-imagewrap img { border: none; display: block; max-width: 100%; height: auto; }
+
+/* ----------------------------------------- t3 overrides
+----------------------------------------- */
+/* line 1170, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+div.t3-incl-list > ul, ul.t3-incl-list { margin: 0 0 20px 0; }
+/* line 1175, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+div.t3-incl-list > ul li, div.t3-incl-list > ul .t3-incl, ul.t3-incl-list li, ul.t3-incl-list .t3-incl { min-height: 22px; padding: 5px 0 0 35px; margin: 0 0 6px 0; background: transparent url("/common/img/app/typo3/typo3-corporate/default/icon/extra-incl-green.png") no-repeat 0 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+/* line 1184, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+div.t3-incl-list > ul .t3-incl-inactive, ul.t3-incl-list .t3-incl-inactive { min-height: 22px; padding: 5px 0 0 35px; margin: 0 0 6px 0; background: transparent url("/common/img/app/typo3/typo3-corporate/default/icon/extra-incl-grey.png") no-repeat 0 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* ----------------------------------------- default border box with rounded corners
+----------------------------------------- */
+/* line 1196, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.box-border-rounded { border: 1px solid #cdcdcd; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; -webkit-border-radius: 5px 5px 5px 5px; -moz-border-radius: 5px 5px 5px 5px; border-radius: 5px 5px 5px 5px; }
+@media (max-width: 499px) { /* line 1196, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+  .box-border-rounded { border: none; } }
+
+/* ----------------------------------------- TOC box
+----------------------------------------- */
+/* line 1208, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.box-border-toc { border: 1px solid #19a653; padding: 20px 20px 10px 20px; -webkit-border-radius: 4px 4px 4px 4px; -moz-border-radius: 4px 4px 4px 4px; border-radius: 4px 4px 4px 4px; }
+/* line 1213, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.box-border-toc.sx-gc-error-field { border-color: #e1c4c4; background: #fef7f7; }
+/* line 1218, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.box-border-toc div.sx-inline-error-msg { padding: 0 0 10px 0; }
+/* line 1222, ../../../../private/projects/typo3-corporate/scss_corp/_layout.scss */
+.box-border-toc a { text-decoration: none; }
+
+/* line 3, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-wrapper { clear: both; overflow: hidden; padding: 5px 0 15px 0; }
+/* line 23, ../../../../private/projects/typo3-corporate/scss_corp/_mixins.scss */
+.sx-gc-button-wrapper:after { content: "."; clear: both; display: block; height: 0; visibility: hidden; overflow: hidden; }
+
+/* line 10, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+button { font-family: Roboto, Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; padding: 0; margin: 0; border: none; background: transparent; overflow: visible; display: inline; cursor: pointer; }
+
+/* line 21, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-cta { font-family: Roboto, Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; display: block; font-size: 18px; text-transform: uppercase; font-weight: bold; text-align: center !important; border: 1px solid #ffffff; width: 100%; max-width: 354px; color: #ffffff; cursor: pointer; margin: auto; text-decoration: none; line-height: normal; padding: 13px 0 13px 0 !important; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; float: none; /* overwrite some styles for b2b portal */ }
+/* line 42, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-cta span { height: auto; float: none; padding: 0; display: inline; }
+/* line 47, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-cta span strong { font-size: 18px !important; color: #ffffff !important; display: inline; }
+/* line 54, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-cta:hover { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+
+/* line 59, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-cta-list { font-size: 15px; border: none; width: auto; min-width: 150px; padding: 15px 32px 15px 32px !important; display: inline-block; letter-spacing: 0.6px; }
+
+/* line 69, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-cta-green { background: #1962FF !important; }
+/* line 71, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-cta-green span { background: none; }
+
+/* line 76, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-cta-green:hover { background: #3DDFFC !important; }
+
+/* line 80, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-cta-corp { background: #ffffff; border: 1px solid #FFFEFD; color: #2819FF; font-weight: lighter; font-size: 18px; }
+
+/* line 88, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-cta-highlight { background: #194FFF; border: none; color: #ffffff; }
+
+/* temp styles until we know all use cases */
+/* line 95, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-default { display: inline-block; font-size: 13px; text-transform: uppercase; text-align: center; text-decoration: none; cursor: pointer; line-height: normal; padding: 8px 20px; font-weight: bold; background: #333333; color: #ffffff; min-width: 200px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* line 111, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-default-green { background: #194FFF; }
+
+/* line 115, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-default-green:hover { background: #fc903d; }
+
+/* line 119, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.t3-content-division-invert .sx-gc-button-cta-corp { background: #666666; border: 1px solid #ffffff; color: #ffffff; }
+
+/* line 125, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.t3-content-division-highlight .sx-gc-button-cta-corp { background: #194FFF; border: 1px solid #ffffff; color: #ffffff; }
+
+/* line 131, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-normal { padding: 0 !important; display: inline-block; /* make old cta buttons backward-conpatible */ }
+/* line 136, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-normal span small { display: none; }
+/* line 139, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-normal span strong { font-weight: inherit; }
+
+/* line 144, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-normal span { background: transparent url("/common/img/app/typo3/typo3-corporate/default/buttons/arrow-button-normal.png") no-repeat 100% 50%; font-family: Roboto, Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; font-size: 12px; font-weight: bold; text-align: left; border: none; display: inline-block; color: #ffffff; text-transform: uppercase; text-decoration: none; cursor: pointer; padding: 5px 45px 5px 20px; }
+
+/* line 159, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-normal-back span { background: transparent url("/common/img/app/typo3/typo3-corporate/default/buttons/arrow-button-normal-back.png") no-repeat 0 50%; padding: 5px 20px 5px 45px; }
+
+/* line 164, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-normal-green { background: #194FFF; text-decoration: none; }
+
+/* line 169, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-normal-green:hover { background: #fc903d; }
+
+/* line 173, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-normal-back { background: #4a4f55; }
+
+/* line 177, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-gc-button-normal-back:hover { background: #67757b; }
+
+/* line 181, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+button.sx-gc-button-cta p, button.sx-gc-button-normal p { padding: 0 !important; margin: 0 !important; }
+
+/* cta area */
+/* line 189, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-cta-area .sx-gc-button-cta { border: none; }
+
+/* ----------------------------------------- text-link
+----------------------------------------- */
+/* line 197, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-link { background: transparent url(/common/img/app/typo3/typo3-corporate/default/buttons/arrow-link.png) no-repeat 0 50%; color: #3979c3; font-size: 14px; display: inline-block; padding: 6px 0 6px 20px !important; text-decoration: none; cursor: pointer; vertical-align: middle; }
+
+/* line 208, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-link:hover { text-decoration: underline; }
+
+/* line 212, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-link-invert { background-image: url(/common/img/app/typo3/typo3-corporate/default/buttons/arrow-invert.png); color: #ffffff; }
+
+/* line 217, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-link-norm { background-image: url(/common/img/app/typo3/typo3-corporate/default/buttons/arrow-norm.png); color: #333333; }
+
+/* line 222, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-link-norm.t3-selected, .sx-link-norm.sx-gc-selected, .sx-link-norm:hover { background-image: url(/common/img/app/typo3/typo3-corporate/default/buttons/arrow-sel.png); color: #194FFF; text-decoration: none; }
+
+/* line 230, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-link-norm-back { background-image: url(/common/img/app/typo3/typo3-corporate/default/buttons/arrow-norm-back.png); color: #333333; }
+
+/* line 235, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-link-norm-back:hover { background-image: url(/common/img/app/typo3/typo3-corporate/default/buttons/arrow-sel-back.png); text-decoration: none; }
+
+/* line 240, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-link-norm-faq { background-image: url(/common/img/app/typo3/typo3-corporate/default/buttons/faq-norm.png); color: #333333; }
+
+/* line 245, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-link-norm-faq.t3-selected, .sx-link-norm-faq.sx-gc-selected, .sx-link-norm-faq:hover { background-image: url(/common/img/app/typo3/typo3-corporate/default/buttons/faq-sel.png); text-decoration: none; }
+
+/* line 252, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-link-norm-info { background-image: url(/common/img/app/typo3/typo3-corporate/default/buttons/info-norm.png); color: #333333; }
+
+/* line 257, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-link-norm-info.t3-selected, .sx-link-norm-info.sx-gc-selected, .sx-link-norm-info:hover { background-image: url(/common/img/app/typo3/typo3-corporate/default/buttons/info-sel.png); text-decoration: none; }
+
+/* line 264, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-link-norm-help { background-image: url(/common/img/app/typo3/typo3-corporate/default/buttons/help-norm.png); color: #333333; }
+
+/* line 269, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-link-norm-help.t3-selected, .sx-link-norm-help.sx-gc-selected, .sx-link-norm-help:hover { background-image: url(/common/img/app/typo3/typo3-corporate/default/buttons/help-sel.png); text-decoration: none; }
+
+/* line 276, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-link-norm-download { background: transparent url(/common/img/app/typo3/typo3-corporate/default/buttons/download-norm.png) no-repeat 0 50%; color: #333333; font-size: 14px; display: inline-block; padding: 8px 0 8px 40px !important; text-decoration: none; font-weight: bold; }
+
+/* line 286, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-link-norm-download:hover { background-image: url(/common/img/app/typo3/typo3-corporate/default/buttons/download-sel.png); }
+
+/* line 290, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-link-strong { font-weight: bold; }
+
+/* line 294, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-link-strong:hover { text-decoration: underline; }
+
+/* line 298, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-question { color: #333333; font-size: 14px; }
+/* line 301, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-question span { color: inherit; border: 1px solid #333333; width: 18px; height: 18px; text-align: center; vertical-align: middle; margin: 0 0 0 3px; line-height: 120%; display: inline-block; cursor: pointer; overflow: hidden; }
+
+/* line 316, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-question-light { color: #666666; }
+/* line 318, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-question-light span { border-color: #666666; }
+
+/* line 323, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-question-invert { color: #ffffff; }
+/* line 325, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-question-invert span { border-color: #ffffff; }
+
+/* line 330, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-question-small { font-size: 12px; }
+/* line 332, ../../../../private/projects/typo3-corporate/scss_corp/_buttons.scss */
+.sx-question-small span { line-height: 150%; }
+
+/* ----------------------------------------- corporate form basics
+----------------------------------------- */
+/* ----------------------------------------- global form elements
+----------------------------------------- */
+/* line 9, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+input, textarea { /* ios hack to avoid zooming in when tab on input */ }
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 799px) { /* line 9, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+  input, textarea { font-size: 16px; } }
+
+/* line 16, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+input.sx-gc-ck { vertical-align: middle; margin: 0 3px 3px 0; height: 14px; width: 14px; }
+
+/* line 23, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+input.sx-gc-rd { vertical-align: middle; margin: 0 3px 3px 0; height: 14px; width: 14px; }
+
+/* ----------------------------------------- fake radios
+----------------------------------------- */
+/* line 34, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-fake-radio { padding: 0 0 6px 0; overflow: hidden; }
+/* line 39, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-fake-radio label { display: inline-block; min-height: 22px; padding: 3px 0 3px 35px !important; background: transparent url("/common/img/app/typo3/typo3-corporate/default/icon/fake-radio-orange-off.png") no-repeat 0 0; line-height: 110%; cursor: pointer; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+/* line 49, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-fake-radio input.sx-gc-rd, .sx-fake-radio input[type=radio] { opacity: 0; filter: alpha(opacity=0); /* just in case we can not use overflow        */ position: absolute; /* ie7/8 does not work with visibility none    */ left: -30px; }
+
+/* line 58, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-fake-radio.sx-gc-selected label { background: transparent url("/common/img/app/typo3/typo3-corporate/default/icon/fake-radio-orange-on.png") no-repeat 0 0; }
+
+/* line 64, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-fake-checkbox { padding: 0 0 6px 0; overflow: hidden; }
+/* line 69, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-fake-checkbox label { display: inline-block !important; padding: 3px 0 3px 35px !important; min-height: 22px; background: transparent url("/common/img/app/typo3/typo3-corporate/default/icon/fake-checkbox-orange-off.png") no-repeat 0 0; line-height: 110%; cursor: pointer; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+/* line 79, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-fake-checkbox input.sx-gc-ck, .sx-fake-checkbox input[type=checkbox] { opacity: 0; filter: alpha(opacity=0); /* just in case we can not use overflow        */ position: absolute; /* ie7/8 does not work with visibility none    */ left: -30px; height: 1px; width: 1px; }
+
+/* line 90, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-fake-checkbox.sx-gc-selected label { background: transparent url("/common/img/app/typo3/typo3-corporate/default/icon/fake-checkbox-orange-on.png") no-repeat 0 0; }
+/* line 93, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-fake-checkbox.sx-gc-selected input[disabled] + label { background: transparent url("/common/img/app/reservation/default/icon/extra-incl-orange.png") no-repeat 0 0; }
+
+/* line 99, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-fake-checkbox-inv label { background-image: url("/common/img/app/typo3/typo3-corporate/default/icon/fake-checkbox-inv-off.png"); }
+
+/* line 105, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-fake-checkbox-inv.sx-gc-selected label { background-image: url("/common/img/app/typo3/typo3-corporate/default/icon/fake-checkbox-inv-on.png"); }
+
+/* line 111, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-fake-checkbox-f60 label { background-image: url("/common/img/app/typo3/typo3-corporate/default/icon/fake-checkbox-f60-off.png"); }
+
+/* line 117, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-fake-checkbox-f60.sx-gc-selected label { background-image: url("/common/img/app/typo3/typo3-corporate/default/icon/fake-checkbox-f60-on.png"); }
+
+/* ----------------------------------------- default forms
+----------------------------------------- */
+/* line 125, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form { /* overwrite the last child in case of only one entry wrapped in sx-gc-multientry-wrapper */ /* ----------------------------------------- form specials old customerdetails
+----------------------------------------- */ /* header overwriting */ /* flight nr */ /* credit cards payment wrapper */ /* -----------------------------------------------
+error
+----------------------------------------------- */ /* hide all messages exept the first in case of multiple entries like birthday */ }
+/* line 127, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-customer-content, .sx-default-form .sx-res-customer-content { padding: 0 0 15px 0; }
+/* line 132, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form input[type=text], .sx-default-form input[type=tel], .sx-default-form input[type=email], .sx-default-form input.sx-gc-txt, .sx-default-form select { border: 1px solid #B0A8A8; padding: 3px; margin: 0 0 1% 0; width: 66%; min-height: 28px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: Roboto, Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; font-size: 14px; color: #666666; vertical-align: middle; -webkit-border-radius: 0 0 0 0; -moz-border-radius: 0 0 0 0; border-radius: 0 0 0 0; }
+@media (max-width: 499px) { /* line 132, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+  .sx-default-form input[type=text], .sx-default-form input[type=tel], .sx-default-form input[type=email], .sx-default-form input.sx-gc-txt, .sx-default-form select { width: 100%; } }
+/* line 156, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form input[type=text]:focus, .sx-default-form input[type=tel]:focus, .sx-default-form input[type=email]:focus, .sx-default-form input.sx-gc-txt:focus, .sx-default-form select:focus { border: 1px solid #194FFF; outline: none; }
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 799px) { /* line 132, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+  .sx-default-form input[type=text], .sx-default-form input[type=tel], .sx-default-form input[type=email], .sx-default-form input.sx-gc-txt, .sx-default-form select { font-size: 16px; } }
+/* line 167, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form textarea { border: 1px solid #B0A8A8; padding: 3px; margin: 0 0 1% 0; width: 66%; font-family: Roboto, Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+@media (max-width: 499px) { /* line 167, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+  .sx-default-form textarea { width: 100%; } }
+/* line 180, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form textarea:focus { border: 1px solid #194FFF; outline: none; }
+/* line 186, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-gc-multientry-wrapper, .sx-default-form .sx-gc-payment-wrapper { display: inline-block; width: 66%; min-height: 28px; margin: 0 0 1% 0; vertical-align: middle; }
+/* line 23, ../../../../private/projects/typo3-corporate/scss_corp/_mixins.scss */
+.sx-default-form .sx-gc-multientry-wrapper:after, .sx-default-form .sx-gc-payment-wrapper:after { content: "."; clear: both; display: block; height: 0; visibility: hidden; overflow: hidden; }
+@media (max-width: 499px) { /* line 186, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+  .sx-default-form .sx-gc-multientry-wrapper, .sx-default-form .sx-gc-payment-wrapper { width: 100%; } }
+/* line 200, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-gc-multientry-wrapper input[type=text], .sx-default-form .sx-gc-multientry-wrapper input[type=tel], .sx-default-form .sx-gc-multientry-wrapper input[type=email], .sx-default-form .sx-gc-multientry-wrapper input.sx-gc-txt, .sx-default-form .sx-gc-multientry-wrapper select { width: 49%; float: left; margin: 0 2% 0 0; }
+/* line 210, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-gc-multientry-wrapper input[type=text]:last-child, .sx-default-form .sx-gc-multientry-wrapper input[type=tel]:last-child, .sx-default-form .sx-gc-multientry-wrapper input[type=email]:last-child, .sx-default-form .sx-gc-multientry-wrapper input.sx-gc-txt:last-child, .sx-default-form .sx-gc-multientry-wrapper select:last-child { float: right; margin: 0 0 0 -3px; }
+/* line 220, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-gc-multientry-wrapper input[type=text]:first-child, .sx-default-form .sx-gc-multientry-wrapper input[type=tel]:first-child, .sx-default-form .sx-gc-multientry-wrapper input[type=email]:first-child, .sx-default-form .sx-gc-multientry-wrapper input.sx-gc-txt:first-child, .sx-default-form .sx-gc-multientry-wrapper select:first-child { float: left; margin: 0 2% 0 0; }
+/* line 229, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-gc-multientry-trio input[type=text], .sx-default-form .sx-gc-multientry-trio input[type=tel], .sx-default-form .sx-gc-multientry-trio input[type=email], .sx-default-form .sx-gc-multientry-trio input.sx-gc-txt, .sx-default-form .sx-gc-multientry-trio select { width: 32%; margin: 0 2% 0 0; }
+/* line 238, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-default-form-label, .sx-default-form label.sx-gc-leftfloater { display: inline-block; padding: 3px 3% 3px 0; margin: 0 0 1% 0; width: 33%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; text-align: left; vertical-align: middle; }
+@media (max-width: 499px) { /* line 238, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+  .sx-default-form .sx-default-form-label, .sx-default-form label.sx-gc-leftfloater { width: 100%; float: none; display: block; padding: 6px 0 3px 0; text-align: left; } }
+/* line 257, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form label.sx-gc-valign-top { vertical-align: top; }
+/* line 265, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form h4 { font-family: Roboto, Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; font-size: 14px; color: #666666; font-weight: bold; margin: 0; padding: 0 0 10px 0; overflow: hidden; }
+/* line 275, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form h4 label span { font-weight: normal; }
+/* line 280, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-res-depending-content { padding: 6px 0 6px 0; }
+/* line 284, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-res-additional-infos-wrapper { padding-left: 5%; }
+/* line 289, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-gc-payment-wrapper select { width: 100%; }
+/* line 293, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-gc-payment-wrapper li { display: inline; }
+/* line 295, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-gc-payment-wrapper li img { cursor: pointer; }
+/* line 300, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-add-wrapper { white-space: nowrap; }
+/* line 304, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-add-wrapper label { white-space: normal; }
+/* line 308, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-add-wrapper input[type=text], .sx-default-form .sx-add-wrapper input.sx-gc-txt, .sx-default-form .sx-add-wrapper select, .sx-default-form .sx-add-wrapper .sx-gc-multientry-wrapper { width: 61%; margin-right: -3px; }
+@media (max-width: 499px) { /* line 308, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+  .sx-default-form .sx-add-wrapper input[type=text], .sx-default-form .sx-add-wrapper input.sx-gc-txt, .sx-default-form .sx-add-wrapper select, .sx-default-form .sx-add-wrapper .sx-gc-multientry-wrapper { width: 90%; } }
+/* line 328, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-add-wrapper .sx-gc-multientry-wrapper { /*padding: 3px 0 0 0;*/ }
+/* line 332, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-add-wrapper .sx-gc-multientry-wrapper input[type=text], .sx-default-form .sx-add-wrapper .sx-gc-multientry-wrapper input.sx-gc-txt, .sx-default-form .sx-add-wrapper .sx-gc-multientry-wrapper select { width: 49%; }
+@media (max-width: 499px) { /* line 338, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+  .sx-default-form .sx-add-wrapper label.sx-gc-leftfloater { padding-bottom: 0; } }
+/* line 344, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-gc-add, .sx-default-form .sx-gc-rem { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: inline-block; font-size: 14px; padding: 3px; background: #e9e9e9; border: 1px solid #B0A8A8; border-left: none; content: "-"; vertical-align: middle; text-align: center; width: 5%; min-height: 28px; margin: 0 0 1% 0; background: transparent url("/common/img/app/reservation/default/icon/addentry-plus.png") no-repeat 50% 50%; cursor: pointer; }
+@media (max-width: 499px) { /* line 344, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+  .sx-default-form .sx-gc-add, .sx-default-form .sx-gc-rem { width: 10%; } }
+/* line 367, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-gc-rem { background-image: url("/common/img/app/reservation/default/icon/addentry-min.png"); }
+/* line 371, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-gc-notice { padding: 0 0 10px 0; }
+/* line 375, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-default-form-division { padding: 15px 20px 3px 20px; margin: 0 0 20px 0; }
+@media (max-width: 499px) { /* line 375, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+  .sx-default-form .sx-default-form-division { padding: 15px 0 3px 0; } }
+/* line 382, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-default-form-division .sx-cta-area { background: #e6e6e6; padding: 20px 16px 20px 16px; margin: 0 -16px 0 -16px; width: 100%; text-align: center; color: #111119; border: none; }
+@media (max-width: 499px) { /* line 382, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+  .sx-default-form .sx-default-form-division .sx-cta-area { margin: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } }
+/* line 396, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-cta-area .sx-gc-button-wrapper { padding-top: 10px; }
+/* line 398, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-cta-area .sx-gc-button-wrapper small { display: block; }
+/* line 403, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-radio-list { padding: 0 0 10px 33%; }
+/* line 407, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-res-secure-wrapper { text-align: center; padding: 20px 0 20px 0; }
+/* line 415, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form ul.sx-gc-error-field label, .sx-default-form div.sx-gc-error-field label, .sx-default-form p.sx-gc-error-field label { /*color: $error-field-txt;*/ }
+/* line 421, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form input.sx-gc-error-field { border-color: #e1c4c4; background: #fcf6f6; }
+/* line 426, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form select.sx-gc-error-field { border-color: #e1c4c4; background: #fcf6f6; }
+/* line 431, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form textarea.sx-gc-error-field { border-color: #e1c4c4; background: #fcf6f6; }
+/* line 436, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-inline-error-msg { padding: 0 0 10px 34%; color: #ae3a24; font-size: 12px; font-weight: lighter; white-space: normal; }
+/* line 445, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-inline-error-msg span { display: none; }
+/* line 448, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-inline-error-msg span:first-child { display: inline; }
+/* line 452, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-gc-message .sx-inline-error-msg { padding: 3px; color: #666666; background: #f2dede; border: 1px solid #e1c4c4; -webkit-border-radius: 3px 3px 3px 3px; -moz-border-radius: 3px 3px 3px 3px; border-radius: 3px 3px 3px 3px; }
+@media (max-width: 499px) { /* line 460, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+  .sx-default-form .sx-inline-error-msg { padding: 0 0 10px 0; } }
+/* line 466, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-default-form .sx-gc-button-verysmall-info { /*display: none;*/ }
+
+/* line 471, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+.sx-cta-area-form .sx-cta-area { background: #e6e6e6; padding: 20px 16px 20px 16px; margin: 0 -16px 0 -16px; width: 100%; text-align: center; color: #111119; border: none; }
+@media (max-width: 499px) { /* line 471, ../../../../private/projects/typo3-corporate/scss_corp/_forms.scss */
+  .sx-cta-area-form .sx-cta-area { margin: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } }
+
+/* ----------------------------------------- sliderlist
+----------------------------------------- */
+/* line 5, ../../../../private/projects/typo3-corporate/scss_corp/_sliderlist.scss */
+.sx-sliderlist { position: relative; }
+/* line 9, ../../../../private/projects/typo3-corporate/scss_corp/_sliderlist.scss */
+.sx-sliderlist ul.sx-sliderlist-list { width: 100%; overflow: hidden; margin: auto; font-size: 0; white-space: nowrap; -ms-touch-action: pan-y; touch-action: pan-y; -ms-user-select: none; user-select: none; -webkit-user-select: none; }
+/* line 24, ../../../../private/projects/typo3-corporate/scss_corp/_sliderlist.scss */
+.sx-sliderlist ul.sx-sliderlist-list > li { display: inline-block; width: 33.33%; background: #ffffff; font-size: 14px; text-align: center; }
+@media (max-width: 499px) { /* line 24, ../../../../private/projects/typo3-corporate/scss_corp/_sliderlist.scss */
+  .sx-sliderlist ul.sx-sliderlist-list > li { width: 100%; } }
+/* line 35, ../../../../private/projects/typo3-corporate/scss_corp/_sliderlist.scss */
+.sx-sliderlist ul.sx-sliderlist-list > li > div { padding: 6%; }
+/* line 39, ../../../../private/projects/typo3-corporate/scss_corp/_sliderlist.scss */
+.sx-sliderlist ul.sx-sliderlist-list > li img { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; max-width: 100%; height: auto; border: none; }
+/* line 47, ../../../../private/projects/typo3-corporate/scss_corp/_sliderlist.scss */
+.sx-sliderlist div.sx-sliderlist-out { text-align: center; padding: 4% 0 4% 0; }
+/* line 52, ../../../../private/projects/typo3-corporate/scss_corp/_sliderlist.scss */
+.sx-sliderlist ul.sx-sliderlist-dpl { overflow: hidden; margin: auto; }
+/* line 57, ../../../../private/projects/typo3-corporate/scss_corp/_sliderlist.scss */
+.sx-sliderlist ul.sx-sliderlist-dpl > li { display: inline-block; border: 1px solid #1934FF; -webkit-border-radius: 7px 7px 7px 7px; -moz-border-radius: 7px 7px 7px 7px; border-radius: 7px 7px 7px 7px; width: 12px; height: 12px; margin: 0 6px 0 6px; }
+@media (max-width: 499px) { /* line 57, ../../../../private/projects/typo3-corporate/scss_corp/_sliderlist.scss */
+  .sx-sliderlist ul.sx-sliderlist-dpl > li { -webkit-border-radius: 9px 9px 9px 9px; -moz-border-radius: 9px 9px 9px 9px; border-radius: 9px 9px 9px 9px; width: 16px; height: 16px; margin: 0 8px 0 8px; } }
+/* line 72, ../../../../private/projects/typo3-corporate/scss_corp/_sliderlist.scss */
+.sx-sliderlist ul.sx-sliderlist-dpl > li span { display: none; }
+/* line 76, ../../../../private/projects/typo3-corporate/scss_corp/_sliderlist.scss */
+.sx-sliderlist ul.sx-sliderlist-dpl > li.sx-selected { background: #1934FF; }
+/* line 80, ../../../../private/projects/typo3-corporate/scss_corp/_sliderlist.scss */
+.sx-sliderlist .sx-sliderlist-next, .sx-sliderlist .sx-sliderlist-back { position: absolute; cursor: pointer; width: 24px; height: 100%; min-height: 24px; top: 0; background: transparent url("/common/img/app/typo3/typo3-corporate/default/bg/bg-slider-button.png") no-repeat 0 50%; }
+@media (max-width: 499px) { /* line 80, ../../../../private/projects/typo3-corporate/scss_corp/_sliderlist.scss */
+  .sx-sliderlist .sx-sliderlist-next, .sx-sliderlist .sx-sliderlist-back { display: none; } }
+/* line 94, ../../../../private/projects/typo3-corporate/scss_corp/_sliderlist.scss */
+.sx-sliderlist .sx-sliderlist-next { right: 0; }
+/* line 98, ../../../../private/projects/typo3-corporate/scss_corp/_sliderlist.scss */
+.sx-sliderlist .sx-sliderlist-back { left: 0; background-position: 100% 50%; }
+
+/* line 104, ../../../../private/projects/typo3-corporate/scss_corp/_sliderlist.scss */
+.ie7 .sx-sliderlist ul.sx-sliderlist-list { overflow-x: auto; }
+/* line 107, ../../../../private/projects/typo3-corporate/scss_corp/_sliderlist.scss */
+.ie7 .sx-sliderlist ul.sx-sliderlist-list > li { display: inline; }
+
+/* line 2, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-static-content p { padding: 0 0 10px 0; }
+/* line 6, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-static-content ul { padding: 5px 0 10px 30px; list-style: disc; }
+/* line 11, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-static-content li { padding: 3px 0 3px 0; list-style: disc; }
+/* line 16, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-static-content ul.t3-2col-list { overflow: hidden; }
+/* line 20, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-static-content ul.t3-2col-list li { width: 50%; float: left; }
+
+/* ----------------------------------------- start subnavi link boxes OBSOLETE only for switch REMOVE AFTER SWITCH
+----------------------------------------- */
+/* line 33, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox { border: 1px solid #B0A8A8; padding: 10px; margin: 0 0 10px 0; }
+/* line 39, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox ul, .t3-subnav-linkbox li { list-style: none; padding: 0; margin: 0; }
+/* line 46, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox .sx-link { background-image: none; padding: 3px 0 3px 0 !important; }
+/* line 51, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox .t3-subnav-linkbox-button { display: none; }
+@media (max-width: 799px) { /* line 51, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+  .t3-subnav-linkbox .t3-subnav-linkbox-button { display: block; } }
+/* line 58, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox.t3-subnav-linkbox-res { border-color: #1934FF; }
+/* line 62, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox.t3-subnav-linkbox-res * { color: #1934FF; }
+
+/* ----------------------------------------- end subnavi link boxes OBSOLETE only for switch REMOVE AFTER SWITCH
+----------------------------------------- */
+/* ----------------------------------------- subnavi link boxes 12 USA-1217
+----------------------------------------- */
+/* line 79, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox-wrapper { border: 1px solid #B0A8A8; margin: 0 0 10px 0; padding: 0 20px 0 20px; overflow: hidden; }
+@media (max-width: 799px) { /* line 79, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+  .t3-subnav-linkbox-wrapper { padding: 0 10px 0 10px; } }
+/* line 89, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox-wrapper ul, .t3-subnav-linkbox-wrapper li { list-style: none; margin: 0; padding: 0; }
+/* line 95, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox-wrapper .t3-subnav-linkbox { border: none; border-bottom: 1px solid #B0A8A8; padding: 10px 0 10px 0; margin: 0; }
+/* line 102, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox-wrapper .t3-subnav-linkbox:last-child { border: none; }
+/* line 106, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox-wrapper .t3-subnav-linkbox a { display: block; padding: 5px 0 5px 0; color: #333333; text-decoration: none; }
+/* line 113, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox-wrapper .t3-subnav-linkbox a.t3-selected { color: #333333; font-weight: bold; }
+/* line 118, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox-wrapper .t3-subnav-linkbox a:hover { color: #333333; text-decoration: underline; }
+/* line 123, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox-wrapper .t3-subnav-linkbox-res a { background: transparent url(/common/img/app/reservation/default/icon/sprites-ctyp-P-high.png) no-repeat 100% 50%; padding: 10px 50px 10px 0; color: #194FFF; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+/* line 130, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox-wrapper .t3-subnav-linkbox-res a.t3-go-pkw { background-image: url(/common/img/app/reservation/default/icon/sprites-ctyp-P-high.png); }
+/* line 134, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox-wrapper .t3-subnav-linkbox-res a.t3-go-lkw { background-image: url(/common/img/app/reservation/default/icon/sprites-ctyp-L-high.png); }
+/* line 138, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox-wrapper .t3-subnav-linkbox-res { border: none; padding: 0; }
+/* line 142, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox-wrapper .t3-subnav-linkbox-res a:hover { color: #1934FF; }
+/* line 146, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox-wrapper .t3-subnav-linkbox-res li { border-bottom: 1px solid #1934FF; }
+@media (max-width: 799px) { /* line 138, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+  .t3-subnav-linkbox-wrapper .t3-subnav-linkbox-res { border: none; padding: 10px 0 10px 0; }
+  /* line 154, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+  .t3-subnav-linkbox-wrapper .t3-subnav-linkbox-res ul { overflow: hidden; width: 100%; white-space: nowrap; }
+  /* line 160, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+  .t3-subnav-linkbox-wrapper .t3-subnav-linkbox-res li { display: inline-block; vertical-align: middle; border: none; }
+  /* line 166, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+  .t3-subnav-linkbox-wrapper .t3-subnav-linkbox-res li:first-child { border-right: 1px solid #1934FF; padding: 0 10px 0 0; }
+  /* line 171, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+  .t3-subnav-linkbox-wrapper .t3-subnav-linkbox-res li:last-child { padding: 0 0 0 10px; margin: 0 0 0 -4px; /* get rid of inline margin */ } }
+@media (max-width: 499px) { /* line 138, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+  .t3-subnav-linkbox-wrapper .t3-subnav-linkbox-res { width: auto; }
+  /* line 179, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+  .t3-subnav-linkbox-wrapper .t3-subnav-linkbox-res a.t3-go-pkw, .t3-subnav-linkbox-wrapper .t3-subnav-linkbox-res a.t3-go-lkw { background: none; padding: 3px 0 3px 0; } }
+/* line 189, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox-wrapper .sx-subnavi-toggle-content .t3-subnav-linkbox { display: block; }
+@media (max-width: 799px) { /* line 189, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+  .t3-subnav-linkbox-wrapper .sx-subnavi-toggle-content .t3-subnav-linkbox { clear: both; display: none; } }
+/* line 197, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-subnav-linkbox-wrapper .sx-subnavi-toggle-content .t3-subnav-linkbox-button { display: none; }
+@media (max-width: 799px) { /* line 197, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+  .t3-subnav-linkbox-wrapper .sx-subnavi-toggle-content .t3-subnav-linkbox-button { display: block; border-top: 1px solid #B0A8A8; } }
+
+/* ----------------------------------------- breadcrumb
+----------------------------------------- */
+/* line 214, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-breadcrumb-wrapper { padding: 2% 0 3% 0; font-size: 13px; }
+@media (max-width: 499px) { /* line 214, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+  .t3-breadcrumb-wrapper { padding: 1% 0 1% 0; } }
+
+/* ----------------------------------------- accordeon
+----------------------------------------- */
+/* line 227, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-accordeon-wrapper .t3-accordeon-box { margin: 0 0 10px 0; }
+/* line 231, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-accordeon-wrapper .t3-accordeon-box > h3 { font-size: 16px; font-weight: normal; color: #999999; margin: 0; border: 1px solid #999999; cursor: pointer; }
+/* line 240, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-accordeon-wrapper .t3-accordeon-box > h3 span { display: block; padding: 10px 10px 10px 40px; background: transparent url(/common/img/app/typo3/typo3-corporate/default/bg/accordeon-norm.png) no-repeat 10px 50%; }
+/* line 246, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-accordeon-wrapper .t3-accordeon-box.t3-selected > h3 { color: #ffffff; background: #999999; }
+/* line 251, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-accordeon-wrapper .t3-accordeon-box.t3-selected > h3 span { background-image: url(/common/img/app/typo3/typo3-corporate/default/bg/accordeon-sel.png); }
+/* line 255, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-accordeon-wrapper .t3-accordeon-content { display: none; padding: 15px; margin: 0 0 10px 0; border: 1px solid #999999; background: #ffffff; border-top: none; min-height: 1px; }
+/* line 23, ../../../../private/projects/typo3-corporate/scss_corp/_mixins.scss */
+.t3-accordeon-wrapper .t3-accordeon-content:after { content: "."; clear: both; display: block; height: 0; visibility: hidden; overflow: hidden; }
+/* line 266, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-accordeon-wrapper .t3-accordeon-content h3, .t3-accordeon-wrapper .t3-accordeon-content h4, .t3-accordeon-wrapper .t3-accordeon-content h4, .t3-accordeon-wrapper .t3-accordeon-content h6 { margin: 10px 0 10px 0; }
+
+/* ----------------------------------------- toggle
+----------------------------------------- */
+/* line 277, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-js-toggle-wrapper { /* special case linkbox list subnavigation toggeling only from medium breakpoint
+*/ }
+/* line 278, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-js-toggle-wrapper .t3-js-toggle-content { display: none; }
+/* line 282, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-js-toggle-wrapper .t3-text-norm { display: inline-block; }
+/* line 286, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-js-toggle-wrapper .t3-text-sel { display: none; }
+/* line 294, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-js-toggle-wrapper .t3-js-toggle-content.t3-subnav-linkbox-list { display: block; }
+@media (max-width: 799px) { /* line 294, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+  .t3-js-toggle-wrapper .t3-js-toggle-content.t3-subnav-linkbox-list { display: none; } }
+
+/* line 302, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-js-toggle-wrapper.t3-selected { /* special case linkbox list subnavigation toggeling only from medium breakpoint
+*/ }
+/* line 303, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-js-toggle-wrapper.t3-selected .t3-js-toggle-content { display: block; }
+/* line 307, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-js-toggle-wrapper.t3-selected .t3-text-norm { display: none; }
+/* line 311, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-js-toggle-wrapper.t3-selected .t3-text-sel { display: inline-block; }
+/* line 319, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-js-toggle-wrapper.t3-selected .t3-js-toggle-content.t3-subnav-linkbox-list { display: block; }
+@media (max-width: 799px) { /* line 319, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+  .t3-js-toggle-wrapper.t3-selected .t3-js-toggle-content.t3-subnav-linkbox-list { display: block; } }
+
+/* ----------------------------------------- pairlist - name, value
+----------------------------------------- */
+/* line 331, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-pairlist-wrapper ul { margin: 0 0 20px 0; padding: 0; list-style: none; display: table; width: 100%; }
+@media (max-width: 499px) { /* line 331, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+  .t3-pairlist-wrapper ul { display: block; } }
+/* line 342, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-pairlist-wrapper li { margin: 0; padding: 0; list-style: none; display: table-row; }
+@media (max-width: 499px) { /* line 342, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+  .t3-pairlist-wrapper li { display: block; } }
+/* line 352, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-pairlist-wrapper li:nth-child(odd) { background: #f2f3f5; }
+/* line 356, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-pairlist-wrapper li div { display: table-cell; vertical-align: top; padding: 2%; }
+@media (max-width: 499px) { /* line 356, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+  .t3-pairlist-wrapper li div { display: block; } }
+@media (max-width: 499px) { /* line 365, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+  .t3-pairlist-wrapper li div:first-child { font-weight: bold; padding-bottom: 0; } }
+
+/* ----------------------------------------- mobile apps
+----------------------------------------- */
+/* line 377, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-mobileapps-content .t3-mobileapps-teaser { width: 100%; max-width: 203px; height: auto; }
+
+/* ----------------------------------------- booking hurry up sold out
+----------------------------------------- */
+/* line 387, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-hurry-up-wrapper { padding: 2px; }
+
+/* line 391, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-hurry-up { padding: 10px 26px 10px 80px; border: 2px solid #1934FF; background: transparent url(/common/img/app/typo3/typo3-corporate/default/bg/hurry-up.png) no-repeat 26px 50%; }
+/* line 396, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-hurry-up h2 { margin: 0; }
+/* line 399, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+.t3-hurry-up p { font-size: 18px; }
+
+/* ----------------------------------------- too stupid to hide...
+----------------------------------------- */
+/* line 407, ../../../../private/projects/typo3-corporate/scss_corp/_static.scss */
+iframe[name=google_conversion_frame] { position: absolute; left: -2000px; bottom: -200px; }
+
+/* ----------------------------------------- tooltip
+----------------------------------------- */
+/* line 4, ../../../../private/projects/typo3-corporate/scss_corp/_tooltip.scss */
+.sx-tooltip-content { position: absolute; top: 0; left: 0; width: 350px; padding: 15px; background: #ffffff; display: none; z-index: 2000; text-align: left; white-space: normal; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); -webkit-border-radius: 3px 3px 3px 3px; -moz-border-radius: 3px 3px 3px 3px; border-radius: 3px 3px 3px 3px; /* use in case of line breaks */ }
+@media (max-width: 499px) { /* line 4, ../../../../private/projects/typo3-corporate/scss_corp/_tooltip.scss */
+  .sx-tooltip-content { width: 90%; left: 5% !important; right: auto !important; } }
+/* line 26, ../../../../private/projects/typo3-corporate/scss_corp/_tooltip.scss */
+.sx-tooltip-content h5 { overflow: hidden; width: 100%; font-family: Roboto, Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; padding: 0 15px 15px 15px; margin: 0 -15px 20px -15px; border-bottom: 1px solid #194FFF; font-weight: 600; text-transform: uppercase; }
+/* line 42, ../../../../private/projects/typo3-corporate/scss_corp/_tooltip.scss */
+.sx-tooltip-content h5 strong { display: inline-block; max-width: 210px; }
+/* line 47, ../../../../private/projects/typo3-corporate/scss_corp/_tooltip.scss */
+.sx-tooltip-content h6 { font-family: Roboto, Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; font-size: 14px; font-weight: normal; padding: 20px 0 10px 0; }
+/* line 54, ../../../../private/projects/typo3-corporate/scss_corp/_tooltip.scss */
+.sx-tooltip-content h6:nth-child(2) { padding: 0 0 10px 0; }
+/* line 58, ../../../../private/projects/typo3-corporate/scss_corp/_tooltip.scss */
+.sx-tooltip-content p, .sx-tooltip-content div { font-weight: lighter; }
+/* line 62, ../../../../private/projects/typo3-corporate/scss_corp/_tooltip.scss */
+.sx-tooltip-content * { color: #333333; text-align: left; }
+/* line 67, ../../../../private/projects/typo3-corporate/scss_corp/_tooltip.scss */
+.sx-tooltip-content a { color: #3979c3; text-decoration: none; }
+
+/* ----------------------------------------- portal navi
+----------------------------------------- */
+/* line 4, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-portalnavi { background: #ffffff; color: #666666; }
+/* line 9, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-portalnavi .t3-portalnavi-float--left { float: right; }
+/* line 10, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-portalnavi .t3-portalnavi-float--right { float: right; }
+/* line 14, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-portalnavi .t3-portalnavi--mr-n18 { margin-right: -18px; }
+/* line 18, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-portalnavi .t3-portalnavi-content { display: table; width: 100%; padding: 0; }
+/* line 24, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-portalnavi .t3-portalnavi-meta-content { display: block; }
+/* line 28, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-portalnavi .t3-portalnavi-content:after { display: none; }
+/* line 33, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-portalnavi ul.portal { display: table-row; }
+/* line 35, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-portalnavi ul.portal li { display: table-cell; padding: 6px 3px 11px 3px; }
+/* line 42, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-portalnavi ul.meta { display: block; }
+/* line 44, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-portalnavi ul.meta li { display: inline-block; padding: 6px 18px 11px 18px; }
+@media (max-width: 999px) { /* line 44, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+  .t3-portalnavi ul.meta li { padding: 6px 10px 11px 10px; } }
+/* line 54, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-portalnavi ul li { text-align: center; font-size: 12px; border-top: 4px solid #fff; }
+/* line 58, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-portalnavi ul li.active { border-top: 4px solid #1934FF; color: #194FFF; }
+/* line 64, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-portalnavi a { color: #666666; text-decoration: none; }
+@media (max-width: 799px) { /* line 4, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+  .t3-portalnavi { display: none; } }
+
+@media (max-width: 799px) { /* line 74, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+  .t3-content-division-inner.t3-navi-content { padding: 0 20px 0 20px; } }
+@media (max-width: 499px) { /* line 74, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+  .t3-content-division-inner.t3-navi-content { padding: 0 10px 0 10px; } }
+
+/* ----------------------------------------- navi
+----------------------------------------- */
+/* line 86, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi { padding-top: 25px; position: relative; z-index: 10000; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+/* line 92, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi ul.t3-main-navi-items { text-align: right; position: relative; }
+/* line 97, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi li.t3-main-navi-item { display: inline-block; padding: 0 0 0 20px; position: static; overflow: visible; }
+/* line 103, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi li.t3-main-navi-item.t3-main-navi-hd-res { padding: 0 20px 0 20px; border-right: 1px solid #ffffff; }
+@media (max-width: 799px) { /* line 103, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+  .t3-main-navi li.t3-main-navi-item.t3-main-navi-hd-res { display: none; } }
+/* line 110, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi li.t3-main-navi-item.t3-main-navi-hd-res :hover { color: #194FFF; }
+/* line 116, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi span { vertical-align: middle; font-size: 16px; text-transform: uppercase; }
+/* line 122, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi img { vertical-align: middle; }
+/* line 126, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi .t3-main-navi-hd { color: #194FFF; text-decoration: none; cursor: pointer; }
+@media (max-width: 499px) { /* line 132, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+  .t3-main-navi .t3-main-navi-hd-menu { float: right; } }
+/* line 138, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi .t3-main-navi-hd-menu span { margin: 0 5px 0 30px; text-shadow: none; }
+@media (max-width: 499px) { /* line 138, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+  .t3-main-navi .t3-main-navi-hd-menu span { margin: 0 5px 0 5px; } }
+/* line 146, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi .t3-main-navi-hd-menu :hover { color: #194FFF; }
+/* line 151, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi li.t3-main-navi-hd-login { background: transparent url(/common/img/app/typo3/typo3-corporate/default/icon/icon-login-white.png) no-repeat 100% 100%; background-size: 18px; cursor: pointer; padding: 0 30px 0 20px; }
+@media (max-width: 499px) { /* line 151, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+  .t3-main-navi li.t3-main-navi-hd-login { display: inline-block; min-height: 20px; padding: 5px 25px 0 20px; } }
+/* line 164, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi li.t3-main-navi-hd-login:hover { cursor: pointer; }
+/* line 167, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi li.t3-main-navi-hd-login:hover .t3-main-navi-hd { color: #194FFF; }
+/* line 172, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi li.t3-main-navi-hd-language:hover { cursor: pointer; }
+/* line 175, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi li.t3-main-navi-hd-language:hover .t3-main-navi-hd { color: #194FFF; }
+@media (max-width: 499px) { /* line 180, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+  .t3-main-navi li.t3-main-navi-hd-language { display: none; } }
+@media (max-width: 499px) { /* line 190, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+  .t3-main-navi li.t3-main-navi-hd-menu { display: block; } }
+/* line 196, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi .t3-js-main-navi-item .t3-main-navi-content { position: absolute; top: 160%; right: 0; padding: 0 0 5px 0; display: none; width: 400px; background: #ffffff; border: 1px solid #111119; text-align: left; overflow: hidden; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+@media (max-width: 799px) { /* line 196, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+  .t3-main-navi .t3-js-main-navi-item .t3-main-navi-content { width: 300px; } }
+@media (max-width: 499px) { /* line 196, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+  .t3-main-navi .t3-js-main-navi-item .t3-main-navi-content { width: 100%; -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); } }
+/* line 222, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi .t3-js-main-navi-item .t3-main-navi-content li { color: #111119; text-align: left; padding: 10px 10px 10px 10px; cursor: pointer; }
+@media (max-width: 499px) { /* line 222, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+  .t3-main-navi .t3-js-main-navi-item .t3-main-navi-content li { font-size: 18px; } }
+/* line 234, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi .t3-js-main-navi-item .t3-main-navi-content li:last-child { border-bottom: none; }
+/* line 238, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi .t3-js-main-navi-item .t3-main-navi-content li a { color: #000; font-size: 14px; text-decoration: none; }
+@media (max-width: 499px) { /* line 238, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+  .t3-main-navi .t3-js-main-navi-item .t3-main-navi-content li a { font-size: 18px; } }
+/* line 248, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi .t3-main-navi-content .t3-mainmenu { overflow: visible; position: relative; width: 100%; }
+/* line 253, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi .t3-main-navi-content .t3-mainmenu li:hover { background: #e6e6e6; }
+/* line 259, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi .t3-main-navi-content .t3-submenu { position: absolute; width: 100%; left: 100%; top: 0; display: none; }
+/* line 267, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi .t3-main-navi-content .t3-submenu.t3-selected { display: block; }
+/* line 271, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi .t3-main-navi-content li.t3-current { cursor: default; background: #194FFF; color: #111119; }
+@media (max-width: 499px) { /* line 271, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+  .t3-main-navi .t3-main-navi-content li.t3-current { color: #111119; } }
+/* line 281, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi .t3-main-navi-content li.t3-current a { cursor: default; color: #111119; }
+@media (max-width: 499px) { /* line 281, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+  .t3-main-navi .t3-main-navi-content li.t3-current a { color: #111119; } }
+/* line 289, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi .t3-submenu-go { background: transparent url(/common/img/app/typo3/typo3-corporate/default/bg/menu-arrow_right.png) no-repeat 100% 50%; background-size: 14px 14px; }
+/* line 294, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi .t3-submenu-back { background: transparent url(/common/img/app/typo3/typo3-corporate/default/bg/menu-arrow_left.png) no-repeat 0 50%; background-size: 14px 14px; padding-left: 28px; }
+/* line 23, ../../../../private/projects/typo3-corporate/scss_corp/_mixins.scss */
+.t3-main-navi:after { content: "."; clear: both; display: block; height: 0; visibility: hidden; overflow: hidden; }
+/* line 302, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-main-navi * { -webkit-user-select: none; user-select: none; }
+
+/* ----------------------------------------- steps
+----------------------------------------- */
+/* line 314, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-steps { padding-top: 25px; position: relative; z-index: 10000; /* fin, no need for breadcrumb */ }
+/* line 319, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-steps ul.t3-steps-items { text-align: right; position: relative; }
+/* line 324, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-steps li { display: inline-block; margin: 0 0 0 30px; }
+@media (max-width: 799px) { /* line 324, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+  .t3-steps li { display: none; } }
+/* line 333, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-steps li a { display: inline-block; text-decoration: none; }
+/* line 338, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-steps li span { display: table-cell; vertical-align: middle; color: #ffffff; text-transform: uppercase; font-size: 16px; font-weight: 700; padding: 0 0 0 5px; }
+@media (max-width: 999px) { /* line 338, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+  .t3-steps li span { display: none; } }
+/* line 351, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-steps li strong { display: table-cell; vertical-align: middle; height: 30px; text-align: center; color: #ffffff; font-size: 16px; font-weight: 700; }
+/* line 361, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-steps a:hover { text-decoration: none; color: #ffffff; }
+/* line 366, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-steps .sx-res-breadcrumb-1 .sx-res-breadcrumb-current-1 strong, .t3-steps .sx-res-breadcrumb-2 .sx-res-breadcrumb-current-2 strong, .t3-steps .sx-res-breadcrumb-3 .sx-res-breadcrumb-current-3 strong, .t3-steps .sx-res-breadcrumb-4 .sx-res-breadcrumb-current-4 strong { color: #194FFF; min-height: 22px; padding: 5px 0 5px 25px; margin: 0 0 0 0; background: transparent url(/common/img/app/reservation/default/icon/extra-incl-green.png) no-repeat 0 50%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+/* line 380, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-steps .sx-res-breadcrumb-1 .sx-res-breadcrumb-current-1 span, .t3-steps .sx-res-breadcrumb-2 .sx-res-breadcrumb-current-2 span, .t3-steps .sx-res-breadcrumb-3 .sx-res-breadcrumb-current-3 span, .t3-steps .sx-res-breadcrumb-4 .sx-res-breadcrumb-current-4 span { color: #194FFF; }
+/* line 388, ../../../../private/projects/typo3-corporate/scss_corp/_navi.scss */
+.t3-steps .sx-res-breadcrumb-5 { display: none; }
+
+/* ----------------------------------------- contents below the line
+----------------------------------------- */
+/* line 7, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-modul-header h2 { color: #194FFF; text-align: center; }
+
+/* line 13, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-bonus-content .t3-content-inline-list ul { margin: 5% 0 5% 0; }
+
+/* line 18, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-main-text-teaser { font-family: "Roboto Condensed", Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; color: #194FFF; font-size: 40px; font-weight: lighter; padding: 10px 0 20px 0; margin: 0; }
+@media (max-width: 799px) { /* line 18, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+  .t3-main-text-teaser { font-size: 36px; } }
+@media (max-width: 499px) { /* line 18, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+  .t3-main-text-teaser { font-size: 30px; } }
+
+/* ----------------------------------------- topoffer slider
+----------------------------------------- */
+/* line 38, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-offer-content { display: none; }
+/* line 42, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-offer-content ul, .t3-offer-content li { margin: 0; padding: 0; }
+/* line 47, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-offer-content #t3-offer-list-wrapper { padding: 0 0 5% 0; }
+/* line 51, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-offer-content .t3-offer-car { width: 100%; max-width: 220px; height: auto; max-height: auto; margin: auto; border: none; }
+/* line 60, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-offer-content .t3-offer-list-head { font-family: "Roboto Condensed", Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; font-size: 22px; font-weight: normal; padding: 10px 0 10px 0; color: #555555; }
+/* line 68, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-offer-content .t3-offer-list-price { font-family: "Roboto Condensed", Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; font-size: 12px; padding: 0 0 20px 0; color: #555555; }
+/* line 75, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-offer-content .t3-offer-list-price strong { display: block; font-weight: lighter; color: #194FFF; font-size: 36px; line-height: 100%; }
+
+/* ----------------------------------------- testimonial slider
+----------------------------------------- */
+/* line 89, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-testimonial-content p { padding: 0 0 10px 0; font-size: 12px; }
+/* line 95, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-testimonial-content cite { font-size: 28px; font-weight: lighter; font-style: normal; white-space: normal; min-height: 75px; display: inline-block; }
+@media (max-width: 499px) { /* line 95, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+  .t3-testimonial-content cite { min-height: auto; font-size: 22px; } }
+/* line 109, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-testimonial-content .t3-star-rating { width: 95px; height: 18px; overflow: hidden; display: block; margin: 0 auto 0 auto; background: transparent url("/common/img/app/typo3/typo3-corporate/default/bg/sx-5-star-f60.png") no-repeat 0 0; }
+/* line 118, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-testimonial-content .t3-star-rating.t3-star-rating-1 { background-position: -76px 0; }
+/* line 121, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-testimonial-content .t3-star-rating.t3-star-rating-2 { background-position: -57px 0; }
+/* line 124, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-testimonial-content .t3-star-rating.t3-star-rating-3 { background-position: -38px 0; }
+/* line 127, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-testimonial-content .t3-star-rating.t3-star-rating-4 { background-position: -19px 0; }
+/* line 130, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-testimonial-content .t3-star-rating.t3-star-rating-5 { background-position: 0 0; }
+/* line 134, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-testimonial-content div.t3-slider-list-wrapper .sx-gc-next, .t3-testimonial-content div.t3-slider-list-wrapper .sx-gc-back { background-image: url("/common/img/app/typo3/typo3-corporate/default/bg/bg-slider-button.png"); }
+
+/* line 142, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-content-division-invert .t3-testimonial-content .t3-star-rating, .t3-content-division-highlight .t3-testimonial-content .t3-star-rating { background-image: url("/common/img/app/typo3/typo3-corporate/default/bg/sx-5-star-fff.png"); }
+/* line 145, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-content-division-invert .t3-testimonial-content div.t3-slider-list-wrapper .sx-gc-next, .t3-content-division-invert .t3-testimonial-content div.t3-slider-list-wrapper .sx-gc-back, .t3-content-division-highlight .t3-testimonial-content div.t3-slider-list-wrapper .sx-gc-next, .t3-content-division-highlight .t3-testimonial-content div.t3-slider-list-wrapper .sx-gc-back { background-image: url("/common/img/app/typo3/typo3-corporate/default/bg/bg-slider-button-invert.png"); }
+
+/* ----------------------------------------- seo tabs
+----------------------------------------- */
+/* line 154, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-seo-network-content { padding: 20px; border: 1px solid #ffffff; position: relative; z-index: 100; top: -1px; }
+
+/* line 164, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-seo-network-tabs .t3-anchorlinks-list { display: -ms-flexbox; display: -moz-flex; display: -webkit-flex; display: flex; position: relative; z-index: 101; }
+/* line 170, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-seo-network-tabs .t3-anchorlinks-list li { -webkit-flex: 1; -moz-flex: 1; -ms-flex: 1; flex: 1; margin: 0 2% 0 2%; }
+/* line 175, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-seo-network-tabs .t3-anchorlinks-list li:first-child, .t3-seo-network-tabs .t3-anchorlinks-list li:last-child { margin: 0; }
+/* line 180, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-seo-network-tabs .t3-anchorlinks-list li a { display: block; text-align: center; text-decoration: none; border: 1px solid #ffffff; padding: 8px 15px 8px 15px; background: #111119; font-size: 16px; }
+/* line 190, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-seo-network-tabs .t3-anchorlinks-list li a.sx-gc-selected { border-bottom: none; padding: 8px 15px 22px 15px; }
+
+/* ----------------------------------------- partner links
+----------------------------------------- */
+/* line 200, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-partnerlink-content { font-size: 16px; font-weight: lighter; }
+/* line 203, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-partnerlink-content h3 { font-size: 28px; padding: 10px 0 20px 0; }
+
+/* ----------------------------------------- popular links seo stuff
+----------------------------------------- */
+/* line 213, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-location-content h2 { text-align: center; padding: 0 0 20px 0; /*padding: 60px 0 20px 0;
+background: transparent url("/common/img/app/typo3/typo3-corporate/default/buttons/arrow-open.png") no-repeat 50% 0;*/ }
+/* line 220, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-location-content .t3-anchorlinks-wrapper { padding: 0 0 40px 0; }
+
+/* line 226, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-location-content.t3-selected h2 { background-image: url("/common/img/app/typo3/typo3-corporate/default/buttons/arrow-close.png"); }
+
+/* line 231, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-list-popular-links { margin: 0 0 20px 0; }
+/* line 233, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-list-popular-links li { margin: 0 0 6px 0; }
+
+/* ----------------------------------------- app links
+----------------------------------------- */
+/* line 242, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-appbanner-content { text-align: center; }
+/* line 246, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-appbanner-content h3 { padding-top: 10px; }
+/* line 250, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-appbanner-content .t3-list-appbanner-wrapper { display: table; margin: auto; }
+@media (max-width: 499px) { /* line 250, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+  .t3-appbanner-content .t3-list-appbanner-wrapper { display: block; } }
+/* line 258, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-appbanner-content ul.t3-list-appbanner-links { display: table-row; }
+@media (max-width: 499px) { /* line 258, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+  .t3-appbanner-content ul.t3-list-appbanner-links { display: block; } }
+/* line 265, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-appbanner-content ul.t3-list-appbanner-links li { display: table-cell; text-align: center; vertical-align: top; }
+@media (max-width: 499px) { /* line 265, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+  .t3-appbanner-content ul.t3-list-appbanner-links li { display: block; } }
+/* line 275, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-appbanner-content ul.t3-list-appbanner-links li a { display: block; padding: 12px; }
+@media (max-width: 799px) { /* line 275, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+  .t3-appbanner-content ul.t3-list-appbanner-links li a { padding: 6px; } }
+@media (max-width: 499px) { /* line 275, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+  .t3-appbanner-content ul.t3-list-appbanner-links li a { padding: 12px; } }
+/* line 287, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-appbanner-content ul.t3-list-appbanner-links li img { max-width: 203px; width: 100%; height: auto; display: inline-block; }
+
+/* ----------------------------------------- trust
+----------------------------------------- */
+/* line 298, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-trust-content { text-align: center; }
+
+/* ----------------------------------------- newsletter
+----------------------------------------- */
+/* line 305, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-newsletter-content { clear: both; text-align: center; }
+/* line 309, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-newsletter-content form { display: block; margin: auto; }
+/* line 314, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-newsletter-content input.input { min-width: 160px; max-width: 260px; width: 30%; height: 30px; vertical-align: middle; padding: 2px 6px 0 6px; font-size: 13px; background: #666666; color: #ffffff; font-weight: normal; border: none; }
+/* line 329, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-newsletter-content button.submit { height: 32px; margin: 0; padding: 0; vertical-align: middle; border: 1px solid #666666; overflow: visible; display: inline-block; cursor: pointer; }
+/* line 340, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-newsletter-content button.submit span { display: inline-block; padding: 0 10px 0 10px; font-size: 16px; color: #666666; }
+
+/* line 352, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-content-division-invert .t3-newsletter-content input.input, .t3-content-division-highlight .t3-newsletter-content input.input { background: #ffffff; color: #666666; }
+/* line 358, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-content-division-invert .t3-newsletter-content button.submit, .t3-content-division-highlight .t3-newsletter-content button.submit { border: 1px solid #ffffff; }
+/* line 362, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-content-division-invert .t3-newsletter-content button.submit span, .t3-content-division-highlight .t3-newsletter-content button.submit span { color: #ffffff; }
+
+/* ----------------------------------------- teaserboxes mydriver, drive-now etc...
+----------------------------------------- */
+/* line 370, ../../../../private/projects/typo3-corporate/scss_corp/_home.scss */
+.t3-grid-33 .t3-teaser-content { text-align: center; padding: 6% 0 6% 0; }
+
+/* ----------------------------------------- fleet corporate lkw home
+----------------------------------------- */
+/* content white on orange */
+/* line 6, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-content-division-grey { background: #e6e6e6; padding: 2% 0 2% 0; font-size: 12px; }
+@media (max-width: 799px) { /* line 6, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+  .t3-content-division-grey { padding: 4% 0 4% 0; } }
+
+/* line 15, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-home-background { /*background-image: url(/common/img/app/typo3/typo3-corporate/default/dummy/bg-lkw-home.png);*/ background-position: 50% 0; background-size: 100% auto; background-repeat: no-repeat; }
+@media (max-width: 1440px) { /* line 15, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+  .t3-home-background { background-size: auto auto; } }
+@media (max-width: 799px) { /* line 15, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+  .t3-home-background { background-size: auto 240px; } }
+@media (max-width: 499px) { /* line 15, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+  .t3-home-background { background: none; } }
+
+/* line 34, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-home-lkw-claim { height: 240px; padding: 0; overflow: visible; }
+/* line 39, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-home-lkw-claim .t3-home-lkw-claim-wrapper { padding: 0; margin: 0; vertical-align: middle; display: inline-block; text-decoration: none; }
+/* line 47, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-home-lkw-claim * { color: #ffffff; }
+/* line 51, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-home-lkw-claim span { font-family: "Roboto Condensed", Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; font-weight: normal; font-size: 45px; text-transform: uppercase; padding: 0; margin: 0; display: block; line-height: 53%; }
+@media (max-width: 799px) { /* line 51, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+  .t3-home-lkw-claim span { font-size: 36px; } }
+/* line 65, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-home-lkw-claim strong { font-family: "Roboto Condensed", Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; font-weight: normal; text-transform: uppercase; font-size: 50px; display: block; padding: 0; margin: 0; padding: 0 0 0 0; }
+@media (max-width: 799px) { /* line 65, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+  .t3-home-lkw-claim strong { font-size: 40px; } }
+/* line 79, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-home-lkw-claim small { display: block; font-size: 22px; font-weight: lighter; padding: 0; }
+@media (max-width: 799px) { /* line 79, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+  .t3-home-lkw-claim small { font-size: 18px; } }
+/* line 89, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-home-lkw-claim:before { content: ' '; width: 0; height: 100%; display: inline-block; vertical-align: middle; overflow: hidden; }
+@media (max-width: 999px) { /* line 34, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+  .t3-home-lkw-claim { padding: 0 0 0 4%; } }
+@media (max-width: 799px) { /* line 34, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+  .t3-home-lkw-claim { height: 215px; } }
+@media (max-width: 499px) { /* line 34, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+  .t3-home-lkw-claim { display: none; } }
+
+/* line 111, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-home-lkw-content { background: #ffffff; padding: 0; }
+
+/* line 116, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-go-ibe { padding: 0 4% 0 4%; overflow: hidden; }
+/* line 120, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-go-ibe p.t3-leftfloater { font-size: 30px; padding: 6px 0 6px 0; font-family: "Roboto Condensed", Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; }
+@media (max-width: 799px) { /* line 120, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+  .t3-go-ibe p.t3-leftfloater { padding: 0 0 6px 0; } }
+@media (max-width: 799px) { /* line 116, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+  .t3-go-ibe { text-align: center; }
+  /* line 130, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+  .t3-go-ibe .t3-leftfloater, .t3-go-ibe .t3-rightfloater { float: none; } }
+
+/* line 138, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-lkw-home-slider-wrapper { padding: 4% 10% 4% 10%; }
+/* line 141, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-lkw-home-slider-wrapper ul.t3-lkw-home-slider > li { width: 50%; }
+@media (max-width: 499px) { /* line 141, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+  .t3-lkw-home-slider-wrapper ul.t3-lkw-home-slider > li { width: 100%; } }
+
+/* line 151, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-lkw-home-slider ul, .t3-lkw-home-slider li { margin: 0; padding: 0; }
+/* line 156, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-lkw-home-slider li > div { padding: 20px; }
+/* line 160, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-lkw-home-slider p { white-space: normal; }
+/* line 164, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-lkw-home-slider .t3-offer-list-head-wrapper { min-height: 130px; }
+/* line 168, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-lkw-home-slider .t3-offer-car { width: 100%; max-width: 350px; height: auto; max-height: auto; margin: auto; border: none; }
+/* line 177, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-lkw-home-slider .t3-offer-list-head { font-family: "Roboto Condensed", Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; font-size: 22px; font-weight: normal; padding: 10px 0 3px 0; color: #333333; }
+/* line 185, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-lkw-home-slider .t3-offer-list-subhead { padding: 0 0 20px 0; color: #333333; }
+/* line 190, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-lkw-home-slider .t3-offer-list-price { font-family: "Roboto Condensed", Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; font-size: 12px; padding: 0 0 20px 0; color: #333333; min-height: 70px; }
+/* line 198, ../../../../private/projects/typo3-corporate/scss_corp/_lkw_home.scss */
+.t3-lkw-home-slider .t3-offer-list-price strong { display: block; font-weight: lighter; color: #194FFF; font-size: 36px; line-height: 100%; }
+
+/* ----------------------------------------- SEO adjustments for text and content elements
+----------------------------------------- */
+/* line 17, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.csc-headerLayout-210, .csc-headerLayout-220, .csc-headerLayout-230, .csc-headerLayout-240, .csc-headerLayout-250, .csc-headerLayout-260, .csc-headerLayout-h1, .csc-headerLayout-h2, .csc-headerLayout-h3, .csc-headerLayout-h4, .csc-headerLayout-h5, .csc-headerLayout-h6 { font-family: "Roboto Condensed", Arial, Verdana, "Liberation Sans", "Bitstream Vera", sans-serif; margin: 0; }
+/* line 24, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.csc-headerLayout-210, .csc-headerLayout-220, .csc-headerLayout-230, .csc-headerLayout-h1, .csc-headerLayout-h2, .csc-headerLayout-h3 { font-weight: lighter; }
+/* line 26, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.csc-headerLayout-240, .csc-headerLayout-250, .csc-headerLayout-260, .csc-headerLayout-h4, .csc-headerLayout-h5, .csc-headerLayout-h6 { font-weight: bold; }
+/* line 30, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.csc-headerLayout-210, .csc-headerLayout-h1 { font-size: 40px; }
+/* line 31, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.csc-headerLayout-220, .csc-headerLayout-h2 { font-size: 32px; }
+/* line 32, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.csc-headerLayout-230, .csc-headerLayout-h3 { font-size: 20px; }
+/* line 33, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.csc-headerLayout-240, .csc-headerLayout-h4 { font-size: 16px; }
+/* line 34, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.csc-headerLayout-250, .csc-headerLayout-h5 { font-size: 14px; }
+/* line 35, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.csc-headerLayout-260, .csc-headerLayout-h6 { font-size: 12px; }
+/* line 38, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.csc-headerLayout-210, .csc-headerLayout-230, .csc-headerLayout-250, .csc-headerLayout-h1, .csc-headerLayout-h3, .csc-headerLayout-h4 { color: #194FFF; }
+/* line 40, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.csc-headerLayout-220, .csc-headerLayout-240, .csc-headerLayout-h2, .csc-headerLayout-h4 { color: #333333; }
+/* line 42, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.csc-headerLayout-260, .csc-headerLayout-h6 { color: #666666; }
+/* line 45, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.csc-headerLayout-230, .csc-headerLayout-240, .csc-headerLayout-250, .csc-headerLayout-260, .csc-headerLayout-h3, .csc-headerLayout-h4, .csc-headerLayout-h5, .csc-headerLayout-h6 { padding: 3px 0 10px 0; }
+/* line 47, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.csc-headerLayout-210, .csc-headerLayout-h1 { padding: 10px 0 20px 0; }
+/* line 48, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.csc-headerLayout-220, .csc-headerLayout-h2 { padding: 10px 0 10px 0; }
+
+/* ----------------------------------------- SEO adjustments for link list
+----------------------------------------- */
+/* line 56, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.csc-menu.csc-menu-1 > li { display: inline-block; }
+/* line 59, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.csc-menu.csc-menu-1 a { background-image: url("/common/img/app/typo3/typo3-corporate/default/buttons/arrow-sel.png"); background-position: 0 50%; background-repeat: no-repeat; display: block; margin-bottom: 5px; margin-right: 20px; margin-top: 5px; padding-left: 15px; }
+
+/* ----------------------------------------- SEO adjustments for SEO footer like buttons
+----------------------------------------- */
+/* line 80, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.t3-seo .t3-content-wrapper { padding-top: 0px; padding-bottom: 0px; }
+/* line 84, ../../../../private/projects/typo3-corporate/scss_corp/_seo.scss */
+.t3-seo .sx-gc-button-cta-corp { font-size: 100%; background: #1a1a1a; border-color: #333333; }
+
+/* ----------------------------------------- fix size
+----------------------------------------- */
+/* line 5, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-content-division-inner, .ie8 .t3-content-division-inner { width: 960px; }
+
+/* line 10, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-special-content, .ie8 .t3-special-content { width: 1020px; }
+
+/* ----------------------------------------- background
+----------------------------------------- */
+/* line 22, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-ibe .t3-background, .ie7 .t3-tpi .t3-background, .ie8 .t3-ibe .t3-background, .ie8 .t3-tpi .t3-background { background-repeat: repeat-x; }
+
+/* line 31, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-static-bg .t3-background, .ie7 .t3-static-bg .t3-background, .ie8 .t3-static-bg .t3-background, .ie8 .t3-static-bg .t3-background { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#421105, endColorstr=#F78000, GradientType=0); }
+
+/* line 38, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-steps li span, .ie8 .t3-steps li span { font-weight: normal; }
+
+/* ----------------------------------------- portal navi
+----------------------------------------- */
+/* line 45, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-portalnavi { min-height: 1px; }
+/* line 49, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-portalnavi .t3-portalnavi-content { display: block; }
+/* line 53, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-portalnavi ul { display: block; min-height: 1px; }
+/* line 58, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-portalnavi ul li { float: left; padding: 4px 15px 10px 15px; }
+
+/* ----------------------------------------- layout trouble main container fix
+----------------------------------------- */
+/* line 67, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-content-division { min-height: 1px; }
+
+/* ----------------------------------------- navi fix
+----------------------------------------- */
+/* line 74, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-main-navi { min-height: 1px; }
+/* line 76, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-main-navi ul.t3-main-navi-items { min-height: 1px; float: right; }
+/* line 81, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-main-navi li.t3-main-navi-item { display: block; float: left; }
+
+/* ----------------------------------------- ibe and main teaser
+----------------------------------------- */
+/* line 93, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-main-content .t3-main-content-row, .ie8 .t3-main-content .t3-main-content-row { display: block; min-height: 1px; }
+/* line 98, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-main-content .t3-teaser-wrapper, .ie8 .t3-main-content .t3-teaser-wrapper { margin: 0 0 0 -3px; }
+
+/* ----------------------------------------- column basics fix ie can not deal with percent values
+----------------------------------------- */
+/* line 109, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-grid-wrapper { margin: 0 -10px 0 -10px; min-height: 1px; }
+/* line 114, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-grid-wrapper .t3-grid-100 { width: expression((this.parentNode.offsetWidth  - 20) + "px"); }
+/* line 119, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-grid-wrapper .t3-grid-50 { width: expression((this.parentNode.offsetWidth / 2 - 20) + "px"); }
+/* line 124, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-grid-wrapper .t3-grid-16 { width: expression((this.parentNode.offsetWidth / 6 - 20) + "px"); }
+/* line 129, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-grid-wrapper .t3-grid-33 { width: expression((this.parentNode.offsetWidth / 3 - 20) + "px"); }
+/* line 134, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-grid-wrapper .t3-grid-66 { width: expression(((this.parentNode.offsetWidth *2 ) / 3 - 20) + "px"); }
+/* line 139, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-grid-wrapper .t3-grid-25 { width: expression((this.parentNode.offsetWidth / 4 - 20) + "px"); }
+/* line 144, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-grid-wrapper .t3-grid-75 { width: expression(((this.parentNode.offsetWidth *3 ) / 4 - 20) + "px"); }
+
+/* line 150, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.t3-grid-ie7, .ie7 .t3-grid-wrapper .t3-grid-100, .ie7 .t3-grid-wrapper .t3-grid-50, .ie7 .t3-grid-wrapper .t3-grid-16, .ie7 .t3-grid-wrapper .t3-grid-33, .ie7 .t3-grid-wrapper .t3-grid-66, .ie7 .t3-grid-wrapper .t3-grid-25, .ie7 .t3-grid-wrapper .t3-grid-75 { padding: 0 10px 0 10px; }
+
+/* ----------------------------------------- flexboxes
+----------------------------------------- */
+/* line 158, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-boxes, .ie8 .t3-boxes, .ie9 .t3-boxes { display: block; min-height: 1px; }
+/* line 164, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-boxes .t3-boxes-item, .ie8 .t3-boxes .t3-boxes-item, .ie9 .t3-boxes .t3-boxes-item { display: block; float: left; width: 32%; }
+/* line 170, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-boxes .t3-boxes-center, .ie8 .t3-boxes .t3-boxes-center, .ie9 .t3-boxes .t3-boxes-center { margin: 0 2% 0 2%; }
+
+/* line 178, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-boxes .t3-boxes-button, .ie7 .t3-gridbox .t3-boxes-button { display: block; }
+/* line 182, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-boxes .t3-boxes-button p, .ie7 .t3-gridbox .t3-boxes-button p { display: block; }
+/* line 186, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-boxes .t3-boxes-button p a, .ie7 .t3-gridbox .t3-boxes-button p a { display: block; }
+
+/* line 192, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 div.t3-slider-list-wrapper .sx-gc-next, .ie7 div.t3-slider-list-wrapper .sx-gc-back { top: expression('0px'); }
+
+/* ----------------------------------------- inline list fix
+----------------------------------------- */
+/* line 201, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-content-inline-list { min-height: 1px; }
+/* line 203, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-content-inline-list ul { white-space: nowrap; }
+/* line 206, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-content-inline-list li { display: inline; }
+
+/* ----------------------------------------- app links
+----------------------------------------- */
+/* line 216, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-appbanner-content ul.t3-list-appbanner-links { display: inline-block; white-space: nowrap; }
+/* line 221, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-appbanner-content ul.t3-list-appbanner-links li { display: inline; }
+/* line 225, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-appbanner-content ul.t3-list-appbanner-links li a { display: inline; text-decoration: none; padding: 0; }
+/* line 231, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-appbanner-content ul.t3-list-appbanner-links li img { width: 203px; }
+
+/* ----------------------------------------- newsletter button fix
+----------------------------------------- */
+/* line 241, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-newsletter-content button.submit { height: 34px; }
+/* line 245, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-newsletter-content button.submit span { display: inline; white-space: nowrap; }
+
+/* ----------------------------------------- network tabs
+----------------------------------------- */
+/* line 258, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-seo-network-tabs ul, .ie8 .t3-seo-network-tabs ul, .ie9 .t3-seo-network-tabs ul { overflow: hidden; }
+/* line 262, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-seo-network-tabs li, .ie8 .t3-seo-network-tabs li, .ie9 .t3-seo-network-tabs li { width: 32%; float: left; margin: 0; }
+/* line 268, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-seo-network-tabs li:first-child + li, .ie8 .t3-seo-network-tabs li:first-child + li, .ie9 .t3-seo-network-tabs li:first-child + li { margin: 0 2% 0 2%; }
+
+/* ----------------------------------------- accordeon hd
+----------------------------------------- */
+/* line 277, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie8 .t3-accordeon-content { overflow: hidden; clear: both; }
+
+/* ----------------------------------------- buttons
+----------------------------------------- */
+/* line 284, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 p.sx-gc-button-normal { display: inline; }
+
+/* line 288, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .sx-gc-button-normal-green, .ie8 .sx-gc-button-normal-green, .ie9 .sx-gc-button-normal-green { background: #016D36; }
+
+/* line 294, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .sx-gc-button-normal-green:hover, .ie8 .sx-gc-button-normal-green:hover, .ie9 .sx-gc-button-normal-green:hover { background: #26ab1c; }
+
+/* ----------------------------------------- pairlist - name, value
+----------------------------------------- */
+/* line 303, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-pairlist-wrapper, .ie8 .t3-pairlist-wrapper { min-height: 1px; }
+/* line 308, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-pairlist-wrapper ul, .ie8 .t3-pairlist-wrapper ul { display: block; padding: 0; list-style: none; border-top: 1px solid #999999; min-height: 1px; }
+/* line 316, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-pairlist-wrapper li, .ie8 .t3-pairlist-wrapper li { display: block; overflow: hidden; border-bottom: 1px solid #999999; }
+/* line 322, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-pairlist-wrapper li div, .ie8 .t3-pairlist-wrapper li div { display: block; float: left; padding: 2% 2% 2% 0; width: 47%; }
+
+/* ----------------------------------------- 2 column list
+----------------------------------------- */
+/* line 335, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-static-content ul.t3-2col-list { padding-left: 14px; }
+/* line 339, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-static-content ul.t3-2col-list li { padding-left: 6%; width: 43.4%; background: transparent url(/common/img/app/typo3/typo3-corporate/default/bg/ie7-listbullet.png) no-repeat 0 50%; }
+
+/* ----------------------------------------- steps
+----------------------------------------- */
+/* line 351, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-steps li { display: inline; margin: 0 0 0 20px; }
+/* line 356, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-steps li span { display: inline-block; }
+/* line 360, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-steps li strong { display: inline-block; }
+
+/* ----------------------------------------- form fixes
+----------------------------------------- */
+/* line 370, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .sx-default-form .sx-gc-add, .ie7 .sx-default-form .sx-gc-rem { min-height: 22px; padding: 0; margin: 0 0 1% -3px; border-left: 1px solid #666666; }
+/* line 378, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .sx-default-form input[type=text], .ie7 .sx-default-form input[type=tel], .ie7 .sx-default-form input[type=email], .ie7 .sx-default-form input.sx-gc-txt, .ie7 .sx-default-form select, .ie7 .sx-default-form .sx-gc-multientry-wrapper, .ie7 .sx-default-form .sx-gc-payment-wrapper { min-height: 22px; width: 60%; padding: 0; }
+/* line 390, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .sx-default-form .sx-gc-multientry-wrapper, .ie7 .sx-default-form .sx-gc-payment-wrapper { display: inline; overflow: hidden; }
+/* line 396, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .sx-default-form .sx-add-wrapper input, .ie7 .sx-default-form .sx-add-wrapper select, .ie7 .sx-default-form .sx-add-wrapper .sx-gc-multientry-wrapper { width: 55%; }
+/* line 402, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .sx-default-form .sx-gc-payment-wrapper input, .ie7 .sx-default-form .sx-gc-payment-wrapper select { width: 100%; }
+/* line 407, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .sx-default-form .sx-gc-multientry-wrapper input, .ie7 .sx-default-form .sx-gc-multientry-wrapper select { width: 48%; padding: 0; }
+/* line 413, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .sx-default-form .sx-gc-multientry-trio input, .ie7 .sx-default-form .sx-gc-multientry-trio select { width: 32%; }
+/* line 418, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .sx-default-form .sx-gc-multientry-wrapper select:first-child + select, .ie7 .sx-default-form .sx-gc-multientry-wrapper select:first-child + input, .ie7 .sx-default-form .sx-gc-multientry-wrapper input:first-child + input, .ie7 .sx-default-form .sx-gc-multientry-wrapper input:first-child + select { float: right; margin-right: 0; margin-left: -3px; }
+/* line 427, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .sx-default-form .sx-gc-multientry-trio select:first-child + select + select, .ie7 .sx-default-form .sx-gc-multientry-trio input:first-child + input + input { float: right; margin-right: 0; margin-left: -3px; }
+/* line 434, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .sx-default-form .sx-gc-multientry-trio select:first-child + select, .ie7 .sx-default-form .sx-gc-multientry-trio input:first-child + input { float: left; margin-right: 2%; margin-left: -3px; }
+/* line 441, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .sx-default-form .sx-add-wrapper .sx-gc-multientry-wrapper { margin-right: 0; border-right: 2px solid #ffffff; }
+/* line 446, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .sx-default-form .sx-default-form-divison { border: 1px solid #666666; }
+/* line 450, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .sx-default-form .sx-default-form-divison .sx-cta-area { background: #e6e6e6; }
+
+/* line 457, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie8 .sx-default-form input[type=text], .ie8 .sx-default-form input[type=tel], .ie8 .sx-default-form input.sx-gc-txt, .ie8 .sx-default-form select, .ie8 .sx-default-form .sx-gc-multientry-wrapper, .ie8 .sx-default-form .sx-gc-payment-wrapper, .ie8 .sx-default-form .sx-gc-add, .ie8 .sx-default-form .sx-gc-rem { min-height: 22px; }
+/* line 468, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie8 .sx-default-form .sx-gc-multientry-wrapper select:first-child + select, .ie8 .sx-default-form .sx-gc-multientry-wrapper select:first-child + input, .ie8 .sx-default-form .sx-gc-multientry-wrapper input:first-child + input, .ie8 .sx-default-form .sx-gc-multientry-wrapper input:first-child + select { float: right; margin-right: 0; }
+/* line 476, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie8 .sx-default-form .sx-gc-multientry-trio select:first-child + select + select, .ie8 .sx-default-form .sx-gc-multientry-trio input:first-child + input + input { float: right; margin-right: 0; }
+/* line 482, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie8 .sx-default-form .sx-gc-multientry-trio select:first-child + select, .ie8 .sx-default-form .sx-gc-multientry-trio input:first-child + input { float: left; margin-right: 2%; }
+/* line 488, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie8 .sx-default-form .sx-default-form-divison { border: 1px solid #666666; }
+/* line 492, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie8 .sx-default-form .sx-default-form-divison .sx-cta-area { background: #194FFF; }
+
+/* ---------------------------------------------------- SVG replacemants
+---------------------------------------------------- */
+/* line 504, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-top-bar #sx-go-home, .ie8 .t3-top-bar #sx-go-home { background-image: url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_logo_vertical_white.png"); }
+/* line 507, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-top-bar .sx-logo-fr #sx-go-home, .ie8 .t3-top-bar .sx-logo-fr #sx-go-home { background-image: url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_fr_logo_vertical_white.png"); }
+
+/* line 514, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-logo-truck .t3-top-bar #sx-go-home, .ie8 .t3-logo-truck .t3-top-bar #sx-go-home { background-image: url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_logo_truck_vertical_white.png"); }
+/* line 517, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-logo-truck .t3-top-bar .sx-logo-fr #sx-go-home, .ie8 .t3-logo-truck .t3-top-bar .sx-logo-fr #sx-go-home { background-image: url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_fr_logo_truck_vertical_white.png"); }
+
+/* only home has t3-logo-big class */
+/* line 525, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-logo-big .t3-top-bar #sx-go-home, .ie8 .t3-logo-big .t3-top-bar #sx-go-home { background-image: url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_logo_horizontal_white.png"); }
+/* line 528, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-logo-big .t3-top-bar .sx-logo-fr #sx-go-home, .ie8 .t3-logo-big .t3-top-bar .sx-logo-fr #sx-go-home { background-image: url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_fr_logo_horizontal_white.png"); }
+
+/* only home has t3-logo-big class */
+/* line 536, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-logo-big.t3-logo-truck .t3-top-bar #sx-go-home, .ie8 .t3-logo-big.t3-logo-truck .t3-top-bar #sx-go-home { background-image: url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_logo_truck_horizontal_white.png"); }
+/* line 539, ../../../../private/projects/typo3-corporate/scss_corp/_iefix.scss */
+.ie7 .t3-logo-big.t3-logo-truck .t3-top-bar .sx-logo-fr #sx-go-home, .ie8 .t3-logo-big.t3-logo-truck .t3-top-bar .sx-logo-fr #sx-go-home { background-image: url("/common/img/app/typo3/typo3-corporate/default/logo/sixt_fr_logo_truck_horizontal_white.png"); }
+
+/* Typo3-corporate END*/
+/* Base START*/
+/* ==|==================== Base/Variables ======================= */
+/* ==|==================== Base/Config ======================= */
+/* ==|==================== Base/Helper ======================= */
+/* line 5, ../../../../private/reusables/scss/_atoms/_helper.scss */
+.is--orange { color: #194FFF !important; }
+
+/* line 9, ../../../../private/reusables/scss/_atoms/_helper.scss */
+.is--bold { font-weight: 700 !important; }
+
+/* line 13, ../../../../private/reusables/scss/_atoms/_helper.scss */
+.is--text-align-center { text-align: center !important; }
+
+/* line 17, ../../../../private/reusables/scss/_atoms/_helper.scss */
+.is--text-align-left { text-align: left !important; }
+
+/* line 21, ../../../../private/reusables/scss/_atoms/_helper.scss */
+.is--text-align-right { text-align: right !important; }
+
+/* line 25, ../../../../private/reusables/scss/_atoms/_helper.scss */
+.l-max-width-960 { max-width: 960px !important; }
+
+/* line 29, ../../../../private/reusables/scss/_atoms/_helper.scss */
+.l-margin-auto { margin: auto !important; }
+
+/* Base END*/
+/* ==|==================== Atoms/Iconfont ======================= */
+@font-face { font-family: 'sixt-iconfont'; src: url("/static/frontendbase/corporate/fonts/sixt-iconfont.eot?oo61u8"); src: url("/static/frontendbase/corporate/fonts/sixt-iconfont.eot?oo61u8#iefix") format("embedded-opentype"), url("/static/frontendbase/corporate/fonts/sixt-iconfont.ttf?oo61u8") format("truetype"), url("/static/frontendbase/corporate/fonts/sixt-iconfont.woff?oo61u8") format("woff"), url("/static/frontendbase/corporate/fonts/sixt-iconfont.svg?oo61u8#sixt-iconfont") format("svg"); font-weight: normal; font-style: normal; }
+/* line 18, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+[class^="sx-icon-"]:before, [class*=" sx-icon-"]:before { /* use !important to prevent issues with browser extensions that change fonts */ font-family: 'sixt-iconfont' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* ==|==================== Additional custom styles ======================= */
+/* line 37, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-info { cursor: pointer; }
+/* line 41, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-info:before { font-size: 18px; color: #333; }
+/* line 47, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-info:hover:before { color: #194FFF !important; }
+
+/* ==|==================== Do not edit below this line This part gets replaced after font generation ======================= */
+/* line 58, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-star_empty { width: 50px; height: 50px; }
+
+/* line 63, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-star_full { width: 50px; height: 50px; }
+
+/* line 68, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-aircondition:before { content: "\e949"; }
+
+/* line 71, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-appstore_apple:before { content: "\e901"; }
+
+/* line 74, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-appstore_blackberry:before { content: "\e902"; }
+
+/* line 77, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-appstore_google:before { content: "\e903"; }
+
+/* line 80, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-appstore_windows:before { content: "\e904"; }
+
+/* line 83, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-arrow_down_1:before { content: "\e905"; }
+
+/* line 86, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-arrow_down_2:before { content: "\e906"; }
+
+/* line 89, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-arrow_left_1:before { content: "\e907"; }
+
+/* line 92, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-arrow_left_2:before { content: "\e908"; }
+
+/* line 95, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-arrow_right_1:before { content: "\e909"; }
+
+/* line 98, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-arrow_right_2:before { content: "\e90a"; }
+
+/* line 101, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-arrow_up_1:before { content: "\e90b"; }
+
+/* line 104, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-arrow_up_2:before { content: "\e90c"; }
+
+/* line 107, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-arrow_updown_1:before { content: "\e90d"; }
+
+/* line 110, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-arrow_updown_2:before { content: "\e90e"; }
+
+/* line 113, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-box_blank:before, .form_checkbox + label:before { content: "\e90f"; }
+
+/* line 116, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-box_checked:before, .form_checkbox:checked + label:before { content: "\e910"; }
+
+/* line 119, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-box_minus:before { content: "\e911"; }
+
+/* line 122, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-box_plus:before { content: "\e912"; }
+
+/* line 125, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-calendar:before { content: "\e913"; }
+
+/* line 128, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-calendar_clock:before { content: "\e914"; }
+
+/* line 131, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-callcenter:before { content: "\e915"; }
+
+/* line 134, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-checkmark:before { content: "\e916"; }
+
+/* line 137, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-clock:before { content: "\e917"; }
+
+/* line 140, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-close_large:before { content: "\e918"; }
+
+/* line 143, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-close_small:before { content: "\e919"; }
+
+/* line 146, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-door:before { content: "\e91a"; }
+
+/* line 149, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-edit:before { content: "\e91b"; }
+
+/* line 152, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-info:before { content: "\e91c"; }
+
+/* line 155, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-info_full:before { content: "\e91d"; }
+
+/* line 158, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-license:before { content: "\e91e"; }
+
+/* line 161, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-list_dotted:before { content: "\e91f"; }
+
+/* line 164, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-list_solid:before { content: "\e920"; }
+
+/* line 167, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-luggage_bag:before { content: "\e921"; }
+
+/* line 170, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-luggage_case:before { content: "\e922"; }
+
+/* line 173, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-map_europe:before { content: "\e923"; }
+
+/* line 176, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-map_world:before { content: "\e924"; }
+
+/* line 179, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-mapmarker:before { content: "\e925"; }
+
+/* line 182, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-menu_navicon:before { content: "\e926"; }
+
+/* line 185, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-move:before { content: "\e927"; }
+
+/* line 188, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-navigation:before { content: "\e928"; }
+
+/* line 191, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-person:before { content: "\e929"; }
+
+/* line 194, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-social_amazon:before { content: "\e92a"; }
+
+/* line 197, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-social_facebook:before { content: "\e92b"; }
+
+/* line 200, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-social_google:before { content: "\e92c"; }
+
+/* line 203, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-social_instagram:before { content: "\e92d"; }
+
+/* line 206, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-social_pinterest:before { content: "\e92e"; }
+
+/* line 209, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-social_snapchat:before { content: "\e92f"; }
+
+/* line 212, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-social_twitter:before { content: "\e930"; }
+
+/* line 215, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-social_youtube:before { content: "\e931"; }
+
+/* line 218, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-transmission_automatic:before { content: "\e932"; }
+
+/* line 221, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-transmission_manual:before { content: "\e933"; }
+
+/* line 224, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-vehicle_cabrio:before { content: "\e934"; }
+
+/* line 227, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-vehicle_combi:before { content: "\e935"; }
+
+/* line 230, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-vehicle_limousine:before { content: "\e936"; }
+
+/* line 233, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-vehicle_lkw:before { content: "\e937"; }
+
+/* line 236, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-vehicle_sport:before { content: "\e938"; }
+
+/* line 239, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-vehicle_suv:before { content: "\e939"; }
+
+/* line 242, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-vehicle_van:before { content: "\e93a"; }
+
+/* line 245, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-star_full:before { content: "\e94a"; }
+
+/* line 248, ../../../../private/projects/corporate/styles/_atoms/_iconfont.scss */
+.sx-icon-star_empty:before { content: "\e900"; }
+
+/* line 1, ../../../../private/projects/corporate/styles/_atoms/_teaserbox.scss */
+.billboardteaser--top { margin-top: 35px; }
+
+/* line 4, ../../../../private/projects/corporate/styles/_atoms/_teaserbox.scss */
+.billboardteaser { height: auto; margin: auto; text-align: center; position: relative; background: #ffffff; padding-bottom: 0; padding-top: 0; }
+@media (max-width: 499px) { /* line 4, ../../../../private/projects/corporate/styles/_atoms/_teaserbox.scss */
+  .billboardteaser { margin: auto auto 2% auto; } }
+/* line 17, ../../../../private/projects/corporate/styles/_atoms/_teaserbox.scss */
+.billboardteaser img { margin: 0; }
+/* line 21, ../../../../private/projects/corporate/styles/_atoms/_teaserbox.scss */
+.billboardteaser__text { position: absolute; margin: auto; top: 0; left: 48%; right: 0; width: 50%; bottom: 0; }
+@media (max-width: 499px) { /* line 21, ../../../../private/projects/corporate/styles/_atoms/_teaserbox.scss */
+  .billboardteaser__text { left: 50%; } }
+/* line 33, ../../../../private/projects/corporate/styles/_atoms/_teaserbox.scss */
+.billboardteaser__text p { position: absolute; top: 50%; transform: translate(0, -50%); overflow: hidden; vertical-align: middle; width: 100%; text-align: left; color: black; font-size: 18px; font-weight: bold; text-transform: uppercase; }
+@media (max-width: 799px) { /* line 33, ../../../../private/projects/corporate/styles/_atoms/_teaserbox.scss */
+  .billboardteaser__text p { font-size: 16px; } }
+@media (max-width: 499px) { /* line 33, ../../../../private/projects/corporate/styles/_atoms/_teaserbox.scss */
+  .billboardteaser__text p { font-size: 24px; } }
+
+/* line 1, ../../../../private/projects/corporate/styles/_atoms/_form_checkbox.scss */
+.form_checkbox { position: absolute; z-index: -1000; left: -1000px; overflow: hidden; clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; }
+/* line 13, ../../../../private/projects/corporate/styles/_atoms/_form_checkbox.scss */
+.form_checkbox + label { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: pointer; font-size: 14px; font-family: "Roboto"; font-weight: 300; }
+/* line 26, ../../../../private/projects/corporate/styles/_atoms/_form_checkbox.scss */
+.form_checkbox + label:before { position: relative; display: inline-block; vertical-align: middle; margin-right: 10px; cursor: pointer; font-family: 'sixt-iconfont' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 15px; line-height: 1; color: green; background: #fff; }
+
+/* line 53, ../../../../private/projects/corporate/styles/_atoms/_form_checkbox.scss */
+.ie8 .form_checkbox { display: inline-block; z-index: 0; height: auto; width: auto; position: static; }
+/* line 60, ../../../../private/projects/corporate/styles/_atoms/_form_checkbox.scss */
+.ie8 .form_checkbox + label { display: inline-block; }
+/* line 62, ../../../../private/projects/corporate/styles/_atoms/_form_checkbox.scss */
+.ie8 .form_checkbox + label:before { display: none; }
+
+/* ==|==================== Atoms/IE Shame ======================= */
+/* line 9, ../../../../private/projects/corporate/styles/_atoms/_ie.scss */
+.ie7 .l-sx-footer p, .ie8 .l-sx-footer p, .ie9 .l-sx-footer p { padding-bottom: 40px; padding-bottom: 2.5rem; }
+/* line 14, ../../../../private/projects/corporate/styles/_atoms/_ie.scss */
+.ie7 .l-sx-footer .tabs-seo ul, .ie8 .l-sx-footer .tabs-seo ul, .ie9 .l-sx-footer .tabs-seo ul { overflow: hidden; }
+/* line 17, ../../../../private/projects/corporate/styles/_atoms/_ie.scss */
+.ie7 .l-sx-footer .tabs-seo ul li, .ie8 .l-sx-footer .tabs-seo ul li, .ie9 .l-sx-footer .tabs-seo ul li { width: 32%; float: left; margin: 0 !important; }
+/* line 23, ../../../../private/projects/corporate/styles/_atoms/_ie.scss */
+.ie7 .l-sx-footer .tabs-seo ul li:first-child + li, .ie8 .l-sx-footer .tabs-seo ul li:first-child + li, .ie9 .l-sx-footer .tabs-seo ul li:first-child + li { margin: 0 2% 0 2% !important; }
+/* line 30, ../../../../private/projects/corporate/styles/_atoms/_ie.scss */
+.ie7 .l-sx-footer .list-links, .ie8 .l-sx-footer .list-links, .ie9 .l-sx-footer .list-links { min-height: 100px; }
+/* line 36, ../../../../private/projects/corporate/styles/_atoms/_ie.scss */
+.ie7 .l-sx-footer .list-links ul li, .ie8 .l-sx-footer .list-links ul li, .ie9 .l-sx-footer .list-links ul li { width: 16.66%; float: left; }
+/* line 41, ../../../../private/projects/corporate/styles/_atoms/_ie.scss */
+.ie7 .l-sx-footer .list-links ul:last-child, .ie8 .l-sx-footer .list-links ul:last-child, .ie9 .l-sx-footer .list-links ul:last-child { clear: both; }
+
+/* ==|==================== Organisms/SX-Socials ======================= */
+/* line 5, ../../../../private/projects/corporate/styles/_organisms/_sx-socials.scss */
+.l-sx-socials { /* ==|==================== Molecule/List-Socials ======================= */ }
+/* line 7, ../../../../private/projects/corporate/styles/_molecules/_list-socials.scss */
+.l-sx-socials .list-socials [class^="sx-icon-"], .l-sx-socials .list-socials [class*=" sx-icon-"] { color: #d8d8d8; font-size: 48px; font-size: 3rem; }
+/* line 12, ../../../../private/projects/corporate/styles/_molecules/_list-socials.scss */
+.l-sx-socials .list-socials ul { text-align: center; }
+/* line 16, ../../../../private/projects/corporate/styles/_molecules/_list-socials.scss */
+.l-sx-socials .list-socials ul li { display: inline-block; padding: 5px 10px 5px 10px; padding: 0.3125rem 0.625rem 0.3125rem 0.625rem; }
+/* line 20, ../../../../private/projects/corporate/styles/_molecules/_list-socials.scss */
+.l-sx-socials .list-socials ul li a { display: inline-block; text-decoration: none; }
+/* line 10, ../../../../private/projects/corporate/styles/_organisms/_sx-socials.scss */
+.l-sx-socials .seo-h3 { text-align: center; }
+/* line 14, ../../../../private/projects/corporate/styles/_organisms/_sx-socials.scss */
+.l-sx-socials p { text-align: center; margin-bottom: 24px; margin-bottom: 1.5rem; }
+
+/* ==|==================== Organisms/SX-Footer ======================= */
+/* line 5, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer { text-align: left; /* ==|==================== Molecule/Tab-SEO ======================= */ /* ==|==================== Molecule/Nav ======================= */ /* ==|==================== Molecule/List-Links ======================= */ /* ==|==================== Molecule/List-Flags ======================= */ /* ==|==================== Molecule/List-Stores ======================= */ /* ==|==================== Atoms/Footer Typography ======================= */ /* ==|==================== Atoms/Normalize ======================= */ }
+/* line 5, ../../../../private/projects/corporate/styles/_molecules/_tabs-seo.scss */
+.l-sx-footer .tabs-seo { margin-bottom: 32px; margin-bottom: 2rem; }
+/* line 9, ../../../../private/projects/corporate/styles/_molecules/_tabs-seo.scss */
+.l-sx-footer .tabs-seo ul { display: flex; position: relative; }
+/* line 13, ../../../../private/projects/corporate/styles/_molecules/_tabs-seo.scss */
+.l-sx-footer .tabs-seo ul li { flex: 1; margin: 0; }
+/* line 18, ../../../../private/projects/corporate/styles/_molecules/_tabs-seo.scss */
+.l-sx-footer .tabs-seo ul li:first-child { margin-right: 2%; }
+/* line 22, ../../../../private/projects/corporate/styles/_molecules/_tabs-seo.scss */
+.l-sx-footer .tabs-seo ul li:last-child { margin-left: 2%; }
+/* line 26, ../../../../private/projects/corporate/styles/_molecules/_tabs-seo.scss */
+.l-sx-footer .tabs-seo ul li a { display: block; padding: 14px 15px 14px 15px; padding: 0.875rem 0.9375rem 0.875rem 0.9375rem; border-bottom: 1px solid #2d2d31; font-size: 14px; font-size: 0.875rem; text-transform: uppercase; text-align: center; background-color: #2d2d31; }
+/* line 35, ../../../../private/projects/corporate/styles/_molecules/_tabs-seo.scss */
+.l-sx-footer .tabs-seo ul li a.sx-gc-selected { border-color: #194FFF; color: #194FFF; }
+@media (max-width: 49.938rem) { /* line 26, ../../../../private/projects/corporate/styles/_molecules/_tabs-seo.scss */
+  .l-sx-footer .tabs-seo ul li a { min-height: 48px; min-height: 3rem; } }
+@media (max-width: 31.188rem) { /* line 26, ../../../../private/projects/corporate/styles/_molecules/_tabs-seo.scss */
+  .l-sx-footer .tabs-seo ul li a { min-height: 64px; min-height: 4rem; } }
+/* line 5, ../../../../private/projects/corporate/styles/_molecules/_nav.scss */
+.l-sx-footer .nav { border-top: 1px solid rgba(244, 244, 244, 0.5); padding-top: 16px; padding-top: 1rem; }
+/* line 10, ../../../../private/projects/corporate/styles/_molecules/_nav.scss */
+.l-sx-footer .nav ul { text-align: center; }
+/* line 14, ../../../../private/projects/corporate/styles/_molecules/_nav.scss */
+.l-sx-footer .nav ul li { display: inline-block; }
+/* line 17, ../../../../private/projects/corporate/styles/_molecules/_nav.scss */
+.l-sx-footer .nav ul li a { padding: 10px; padding: 0.625rem; }
+/* line 20, ../../../../private/projects/corporate/styles/_molecules/_nav.scss */
+.l-sx-footer .nav ul li a:hover { color: white; text-shadow: 0 0 1px white; }
+/* line 5, ../../../../private/projects/corporate/styles/_molecules/_list-links.scss */
+.l-sx-footer .list-links { margin-bottom: 24px; margin-bottom: 1.5rem; }
+/* line 9, ../../../../private/projects/corporate/styles/_molecules/_list-links.scss */
+.l-sx-footer .list-links [class^="sx-icon-"], .l-sx-footer .list-links [class*=" sx-icon-"] { float: left; color: #194FFF; padding-right: 16px; padding-right: 1rem; }
+/* line 15, ../../../../private/projects/corporate/styles/_molecules/_list-links.scss */
+.l-sx-footer .list-links ul { -webkit-column-width: 140px; -moz-column-width: 140px; column-width: 140px; }
+/* line 5, ../../../../private/projects/corporate/styles/_molecules/_list-flags.scss */
+.l-sx-footer .list-flags { line-height: 0; margin-bottom: 28px; margin-bottom: 1.75rem; }
+/* line 10, ../../../../private/projects/corporate/styles/_molecules/_list-flags.scss */
+.l-sx-footer .list-flags__headline { display: block; float: left; height: 25px; padding-right: 24px; padding-right: 1.5rem; line-height: 25px; }
+/* line 19, ../../../../private/projects/corporate/styles/_molecules/_list-flags.scss */
+.l-sx-footer .list-flags__countryicons { display: inline-block; }
+/* line 23, ../../../../private/projects/corporate/styles/_molecules/_list-flags.scss */
+.l-sx-footer .list-flags__countryicons ul { overflow: hidden; }
+/* line 27, ../../../../private/projects/corporate/styles/_molecules/_list-flags.scss */
+.l-sx-footer .list-flags__countryicons ul li { float: left; height: 25px; }
+/* line 31, ../../../../private/projects/corporate/styles/_molecules/_list-flags.scss */
+.l-sx-footer .list-flags__countryicons ul li a { display: block; height: 100%; padding: 0px 8px 0px 8px; padding: 0rem 0.5rem 0rem 0.5rem; }
+/* line 5, ../../../../private/projects/corporate/styles/_molecules/_list-stores.scss */
+.l-sx-footer .list-stores { margin-bottom: 24px; margin-bottom: 1.5rem; }
+/* line 9, ../../../../private/projects/corporate/styles/_molecules/_list-stores.scss */
+.l-sx-footer .list-stores [class^="sx-icon-"], .l-sx-footer .list-stores [class*=" sx-icon-"] { color: #d8d8d8; font-size: 48px; font-size: 3rem; }
+/* line 14, ../../../../private/projects/corporate/styles/_molecules/_list-stores.scss */
+.l-sx-footer .list-stores ul { text-align: center; }
+/* line 18, ../../../../private/projects/corporate/styles/_molecules/_list-stores.scss */
+.l-sx-footer .list-stores ul li { display: inline-block; padding: 5px 10px 5px 10px; padding: 0.3125rem 0.625rem 0.3125rem 0.625rem; }
+/* line 5, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer h2, .l-sx-footer h3, .l-sx-footer h4, .l-sx-footer h5, .l-sx-footer .seo-h2, .l-sx-footer .seo-h3, .l-sx-footer .seo-h4, .l-sx-footer .seo-h5 { padding: 0; margin: 0; color: #F4F4F4; font-family: "Roboto", sans-serif; font-weight: 300; text-transform: uppercase; }
+/* line 14, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer h2, .l-sx-footer .seo-h2 { font-size: 32px; font-size: 2rem; }
+/* line 18, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer h3, .l-sx-footer .seo-h3 { margin-bottom: 32px; margin-bottom: 2rem; font-size: 20px; font-size: 1.25rem; }
+/* line 23, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer .seo-h3 { text-align: center; }
+/* line 27, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer h4, .l-sx-footer .seo-h4 { margin-bottom: 16px; margin-bottom: 1rem; font-size: 16px; font-size: 1rem; }
+/* line 32, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer h5, .l-sx-footer .seo-h5 { font-size: 14px; font-size: 0.875rem; }
+/* line 36, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer h6, .l-sx-footer .seo-h6 { margin-bottom: 12px; margin-bottom: 0.75rem; font-size: 12px; font-size: 0.75rem; font-weight: 400; }
+/* line 42, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer a, .l-sx-footer p { font-family: "Roboto", sans-serif; font-weight: 300; color: #F4F4F4; font-size: 12px; font-size: 0.75rem; line-height: 1.5; }
+/* line 50, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer a { text-decoration: none; }
+/* line 54, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer p { margin-bottom: 12px; margin-bottom: 0.75rem; }
+/* line 56, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer p:last-child { margin-bottom: 40px; margin-bottom: 2.5rem; }
+/* line 61, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer strong { color: #194FFF; }
+/* line 65, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer hr { border: none; height: 1px; margin-bottom: 28px; margin-bottom: 1.75rem; color: rgba(244, 244, 244, 0.5); background-color: rgba(244, 244, 244, 0.5); }
+/* line 77, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer .csc-headerLayout-210, .l-sx-footer .csc-headerLayout-220, .l-sx-footer .csc-headerLayout-230, .l-sx-footer .csc-headerLayout-240, .l-sx-footer .csc-headerLayout-250, .l-sx-footer .csc-headerLayout-260, .l-sx-footer .csc-headerLayout-h1, .l-sx-footer .csc-headerLayout-h2, .l-sx-footer .csc-headerLayout-h3, .l-sx-footer .csc-headerLayout-h4, .l-sx-footer .csc-headerLayout-h5, .l-sx-footer .csc-headerLayout-h6 { padding: 0; margin: 0; color: #F4F4F4; text-transform: uppercase; font-family: "Roboto", sans-serif; font-weight: 400; }
+/* line 87, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer .csc-headerLayout-210, .l-sx-footer .csc-headerLayout-h1 { font-size: 40px; font-size: 2.5rem; }
+/* line 90, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer .csc-headerLayout-220, .l-sx-footer .csc-headerLayout-h2 { font-size: 32px; font-size: 2rem; }
+/* line 93, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer .csc-headerLayout-230, .l-sx-footer .csc-headerLayout-h3 { margin-bottom: 32px; margin-bottom: 2rem; font-size: 20px; font-size: 1.25rem; }
+/* line 97, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer .csc-headerLayout-240, .l-sx-footer .csc-headerLayout-h4 { margin-bottom: 16px; margin-bottom: 1rem; font-size: 16px; font-size: 1rem; }
+/* line 101, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer .csc-headerLayout-250, .l-sx-footer .csc-headerLayout-h5 { font-size: 14px; font-size: 0.875rem; }
+/* line 104, ../../../../private/projects/corporate/styles/_atoms/_footer-typography.scss */
+.l-sx-footer .csc-headerLayout-260, .l-sx-footer .csc-headerLayout-h6 { margin-bottom: 12px; margin-bottom: 0.75rem; font-size: 12px; font-size: 0.75rem; font-weight: 700; }
+/* line 5, ../../../../private/projects/corporate/styles/_atoms/_normalize.scss */
+.l-sx-footer .t3-grid-wrapper { margin: 0; }
+/* line 9, ../../../../private/projects/corporate/styles/_atoms/_normalize.scss */
+.l-sx-footer .t3-grid-wrapper > :first-child { padding-left: 0; }
+/* line 13, ../../../../private/projects/corporate/styles/_atoms/_normalize.scss */
+.l-sx-footer .t3-grid-wrapper > :last-child { padding-right: 0; }
+@media (max-width: 49.938rem) { /* line 18, ../../../../private/projects/corporate/styles/_atoms/_normalize.scss */
+  .l-sx-footer .t3-grid-wrapper > :nth-child(3n+3) { padding-right: 0; }
+  /* line 21, ../../../../private/projects/corporate/styles/_atoms/_normalize.scss */
+  .l-sx-footer .t3-grid-wrapper > :nth-child(3n+1) { padding-left: 0; } }
+/* line 18, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .l-sx-footer-upper { background-color: #35353C; padding-top: 30px; padding-top: 1.875rem; }
+/* line 27, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .l-sx-footer-upper [class^="sx-icon-"], .l-sx-footer .l-sx-footer-upper [class*=" sx-icon-"] { color: #194FFF; }
+/* line 32, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .l-sx-footer-upper .sx-icon-vehicle_limousine:before { position: relative; top: 3px; }
+/* line 38, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .l-sx-footer-upper .list_with_green_icon { color: #F4F4F4; }
+/* line 43, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .l-sx-footer-lower { padding: 2% 0 2% 0; background-color: #111119; }
+/* line 48, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .l-sx-footer-lower [class^="sx-icon-"], .l-sx-footer .l-sx-footer-lower [class*=" sx-icon-"] { color: #F4F4F4; }
+/* line 53, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .l-sx-footer-lower h2, .l-sx-footer .l-sx-footer-lower h3, .l-sx-footer .l-sx-footer-lower h4 { color: #194FFF; }
+/* line 59, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .l-sx-footer-lower .seo-h3 { text-align: center; }
+/* line 63, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .l-sx-footer-lower .t3-corporate-footer-navigtion { padding: 1rem 0 0 0; text-align: center; }
+/* line 71, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .footer-float--left { float: left; }
+/* line 72, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .footer-float--right { float: right; }
+@media (max-width: 999px) { /* line 75, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+  .l-sx-footer .footer-float--left, .l-sx-footer .footer-float--right { float: none; clear: both; margin: 0.625rem 0; padding: 0; } }
+/* line 85, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .l-tabs-seo, .l-sx-footer .l-list-links, .l-sx-footer .l-list-flags, .l-sx-footer .t3-grid-wrapper, .l-sx-footer .l-list-stores, .l-sx-footer .l-nav { max-width: 960px; margin: auto; }
+/* line 94, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .l-tabs-seo--tidy, .l-sx-footer .l-list-links--tidy, .l-sx-footer .l-list-flags--tidy, .l-sx-footer .t3-grid-wrapper--tidy, .l-sx-footer .l-list-stores--tidy, .l-sx-footer .l-nav--tidy { border: none; padding-top: 0; }
+/* line 97, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .l-tabs-seo--tidy:after, .l-sx-footer .l-list-links--tidy:after, .l-sx-footer .l-list-flags--tidy:after, .l-sx-footer .t3-grid-wrapper--tidy:after, .l-sx-footer .l-list-stores--tidy:after, .l-sx-footer .l-nav--tidy:after { content: "."; clear: both; text-indent: -100%; }
+/* line 102, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .l-tabs-seo--tidy ul, .l-sx-footer .l-list-links--tidy ul, .l-sx-footer .l-list-flags--tidy ul, .l-sx-footer .t3-grid-wrapper--tidy ul, .l-sx-footer .l-list-stores--tidy ul, .l-sx-footer .l-nav--tidy ul { margin-left: -0.625rem; text-align: left; }
+/* line 106, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .l-tabs-seo--tidy ul.social-icons, .l-sx-footer .l-list-links--tidy ul.social-icons, .l-sx-footer .l-list-flags--tidy ul.social-icons, .l-sx-footer .t3-grid-wrapper--tidy ul.social-icons, .l-sx-footer .l-list-stores--tidy ul.social-icons, .l-sx-footer .l-nav--tidy ul.social-icons { margin-top: -7px; margin-left: 0; }
+/* line 107, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .l-tabs-seo--tidy ul.social-icons, .l-sx-footer .l-tabs-seo--tidy ul.social-icons li, .l-sx-footer .l-list-links--tidy ul.social-icons, .l-sx-footer .l-list-links--tidy ul.social-icons li, .l-sx-footer .l-list-flags--tidy ul.social-icons, .l-sx-footer .l-list-flags--tidy ul.social-icons li, .l-sx-footer .t3-grid-wrapper--tidy ul.social-icons, .l-sx-footer .t3-grid-wrapper--tidy ul.social-icons li, .l-sx-footer .l-list-stores--tidy ul.social-icons, .l-sx-footer .l-list-stores--tidy ul.social-icons li, .l-sx-footer .l-nav--tidy ul.social-icons, .l-sx-footer .l-nav--tidy ul.social-icons li { list-style: none; }
+/* line 114, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .l-tabs-seo--tidy ul.social-icons li, .l-sx-footer .l-list-links--tidy ul.social-icons li, .l-sx-footer .l-list-flags--tidy ul.social-icons li, .l-sx-footer .t3-grid-wrapper--tidy ul.social-icons li, .l-sx-footer .l-list-stores--tidy ul.social-icons li, .l-sx-footer .l-nav--tidy ul.social-icons li { display: inline-block; }
+/* line 116, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .l-tabs-seo--tidy ul.social-icons li a, .l-sx-footer .l-list-links--tidy ul.social-icons li a, .l-sx-footer .l-list-flags--tidy ul.social-icons li a, .l-sx-footer .t3-grid-wrapper--tidy ul.social-icons li a, .l-sx-footer .l-list-stores--tidy ul.social-icons li a, .l-sx-footer .l-nav--tidy ul.social-icons li a { padding: 0 0 0 0.625rem; display: block; }
+@media (max-width: 999px) { /* line 125, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+  .l-sx-footer .l-tabs-seo--tidy ul, .l-sx-footer .l-list-links--tidy ul, .l-sx-footer .l-list-flags--tidy ul, .l-sx-footer .t3-grid-wrapper--tidy ul, .l-sx-footer .l-list-stores--tidy ul, .l-sx-footer .l-nav--tidy ul { margin-left: 0; text-align: center; }
+  /* line 129, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+  .l-sx-footer .l-tabs-seo--tidy ul.social-icons, .l-sx-footer .l-list-links--tidy ul.social-icons, .l-sx-footer .l-list-flags--tidy ul.social-icons, .l-sx-footer .t3-grid-wrapper--tidy ul.social-icons, .l-sx-footer .l-list-stores--tidy ul.social-icons, .l-sx-footer .l-nav--tidy ul.social-icons { margin-top: 1.0rem; } }
+/* line 136, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .t3-grid-wrapper { padding-bottom: 24px; padding-bottom: 1.5rem; }
+/* line 139, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .t3-grid-wrapper .t3-grid-wrapper { padding-bottom: 0; }
+/* line 144, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .t3-grid-wrapper .t3-grid-50 { padding-bottom: 8px; padding-bottom: 0.5rem; }
+/* line 147, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .t3-grid-wrapper .t3-grid-50 [class^="sx-icon-"], .l-sx-footer .t3-grid-wrapper .t3-grid-50 [class*=" sx-icon-"] { position: relative; bottom: .5rem; display: inline-block; float: left; width: 9%; font-size: 32px; font-size: 2rem; }
+/* line 159, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .t3-grid-wrapper .t3-grid-50 .t3-grid-wrapper { display: inline-block; width: 91%; padding-bottom: 4px; padding-bottom: 0.25rem; }
+/* line 165, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .t3-grid-wrapper .t3-grid-50 .t3-grid-wrapper > :nth-child(2) { padding: 0; }
+/* line 168, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+.l-sx-footer .t3-grid-wrapper .t3-grid-50 .t3-grid-wrapper > :nth-child(2) ul { padding-right: 3%; }
+@media (max-width: 31.188rem) { /* line 176, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+  .l-sx-footer .t3-grid-wrapper .t3-grid-16 { min-height: inherit; margin-bottom: 32px; margin-bottom: 2rem; } }
+@media (max-width: 49.938rem) { /* line 176, ../../../../private/projects/corporate/styles/_organisms/_sx-footer.scss */
+  .l-sx-footer .t3-grid-wrapper .t3-grid-16 { min-height: 192px; min-height: 12rem; } }
